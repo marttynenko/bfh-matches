@@ -1,0 +1,4 @@
+.slick-slider,
+.slick-slider.slick-initialized {
+	display: none;
+}

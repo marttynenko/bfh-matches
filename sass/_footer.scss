@@ -1,0 +1,139 @@
+.footer {
+	background: $footer_bg;
+	padding-bottom: 42px;
+	@include fz(13);
+	font-weight: 300;
+	color: #a4a4a4;
+
+	a {
+		color: #a4a4a4;
+		border-bottom-color: rgba(#a4a4a4, .7);
+
+		&:hover {
+			border-bottom-color: #FFF;
+			color: #FFF;
+		}
+	}
+	a.btn {
+		color: #FFF;
+	}
+}
+.f-partners {
+	background: #FFF;
+	padding: 30px 0px;
+}
+.f-scroll {
+	margin-bottom: 35px;
+	border-bottom: 1px solid #393b3f;
+
+	a {
+		display: block;
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		border-bottom: 0;
+		cursor: pointer;
+		
+		&:hover {
+			span {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+	span {
+		border-bottom: 1px solid rgba(#a4a4a4, .7);
+		transition: border .45s;
+	}
+}
+.i-up {
+	@include sprite($i-up);
+}
+.slick-partners {
+	.item a {
+		height: 76px;
+		padding: 0px 20px;
+		@extend %flex, %aic, %jc;
+		border-bottom: 0;
+
+		img {
+			max-height: 76px;
+		}
+	}
+}
+.f-title {
+	@include fz(14);
+	font-weight: 500;
+	color: #FFF;
+	margin-bottom: 12px;
+	line-height: 1.15;
+}
+.f-menu {
+	line-height: 1.25;
+	margin-bottom: 30px;
+
+	ul {
+		margin-bottom: 25px;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	a:hover {
+		color: $primary;
+		border-bottom-color: $primary;
+	}
+}
+.f-contacts {
+	margin-bottom: 15px;
+
+	[class^="flx-"] {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 8px;
+	}
+	.btn {
+		margin-top: 10px;
+	}
+}
+.f-bottom {
+	padding-top: 30px;
+	border-top: 1px solid #393b3f;
+}
+.f-fs {
+	a {
+		display: inline-block;
+		vertical-align: baseline;
+		position: relative;
+		margin-right: 32px;
+		color: #FFF;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: -25px;
+			top: -7px;
+			@include sprite($fs);
+		}
+	}
+}
+.f-sponsors {
+	a {
+		border-bottom: 0;
+
+		&:hover {
+			opacity: 0.85;
+		}
+	}
+}
+.arenas-filter {
+	span {
+		margin-right: 5px;
+	}
+	span, .jq-selectbox {
+		vertical-align: baseline;
+	}
+	.jq-selectbox {
+		top: 6px;
+	}
+}

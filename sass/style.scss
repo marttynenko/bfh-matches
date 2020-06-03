@@ -1,0 +1,193 @@
+// Colors & BG's ---
+$bgc: #f4f4f4;
+$font: #3f3f3f;
+$font_2: #181818;
+$font_light: #7e7e7e;
+$light: #6e6d6d;
+$titles: #000;
+
+$red: #de1b1b;
+$red_hover: darken($red, 10%);
+$yellow: #ffcf28;
+$yellow_hover:  darken($yellow, 15%);
+
+$primary: #21b049;
+$primary_hover: darken($primary, 10%);
+$secondary: #ed2b32;
+$secondary_hover: darken($secondary, 10%);
+$gray: rgba(#000, .6);
+$gray_hover: darken($gray, 15%);
+
+$dark: #3c3c3c;
+
+$link: $font;
+$link_hover: $primary_hover;
+$link_active: #d9241c;
+$link_border: $primary;
+
+$border: #e9e9e9;
+$border_light: #ebebeb;
+$devider: #d6d6d6;
+
+$valid: #25a670;
+
+$input_border: $border;
+$input_hover: darken($input_border,15%);
+$input_focus: #898989;
+$input_color: #7a7d87;
+$input_shadow: #f6f6f6;
+$jq_border: #e7e7e7;
+$jq_focus: #9f9f9f;
+
+
+// Layouts
+$inner: 1330px;
+$gutter: 20px;
+$col_gutter: 10px;
+
+
+// Typography ---
+$fontsize: 14;
+$weight: 300;
+$basefont: 'Ubuntu';
+$lh: 1.42;
+$th: (30/16);
+$paragraph_margin: 0px 0px 28px;
+
+// headings
+$headings_font_family: $basefont;
+$headings_margin: 25px 0px 18px;
+$headings_font_weight: 700;
+$headings_color: $titles;
+$h1: 36;
+$h2: 28;
+$h3: 20;
+$h4: 18;
+$h5: 16;
+$h6: $fontsize;
+
+$block_heading_font_size: 18;
+
+// article typography
+$article_font_size: 16;
+$article_line_height: (30/$article_font_size);
+$article_paragraph_margin: 0 0 32px;
+$article_img_margin: 0 0 25px;
+$article_font_weight: 300;
+
+
+// Buttons & Inputs ---
+$btn_font_size: 12;
+$btn_font_weight: 700;
+$btn_text_transform: uppercase;
+$btn_height: 40px;
+$btn_height_big: 50px;
+$btn_height_mini: 32px;
+$btn_paddings: 0px 42px;
+$btn_border_width: 0;
+$btn_border_color: $primary;
+$btn_border_radius: 0;
+
+$input_height: $btn_height;
+$input_paddings: 0px 15px;
+$input_border_radius: 0;
+$input_bg: #FFF;
+
+$checkbox_size: 14px;
+$radio_size: $checkbox_size;
+
+
+// Breadcrumbs ---
+$bread_font_size: 13;
+$bread_bg: #eaeaea;
+$bread_color: rgba($gray, .4);
+$bread_link_color: rgba($font, .8);
+$bread_paddings: 13px 0px;
+$bread_margin: -40px auto 35px;
+
+
+// Other ---
+$footer_bg: #25282c;
+
+$sticker_bg: $primary;
+$sticker_height: 25px;
+$sticker_height_mini: 25px;
+$sticker_paddings: 0px 10px;
+$sticker_font_size: 10;
+$sticker_font_weight: 700;
+$sticker_text_transform: uppercase;
+
+$shadow: 0px 0px 20px -3px rgba(60, 60, 60, 0.25);
+$shadow_focus: 0px 0px 30px -3px rgba(60, 60, 60, 0.35);
+$shadow_light: 0px 0px 8px -1px rgba(85, 85, 85, 0.1);;
+$beizer: cubic-bezier(.3,.53,.38,.73);
+
+
+@mixin fz($f_size) {
+	font-size: $f_size + px;
+	font-size: $f_size/16 + rem;
+}
+
+@mixin ls($lsp) {
+	letter-spacing: $lsp/1000 + em;
+}
+
+@mixin box-shadow($sx, $sy, $ss, $sblur, $scolor) {
+	-webkit-box-shadow: $sx $sy $ss $sblur $scolor;
+	-moz-box-shadow: $sx $sy $ss $sblur $scolor;
+	-ms-box-shadow: $sx $sy $ss $sblur $scolor;
+	-o-box-shadow: $sx $sy $ss $sblur $scolor;
+	box-shadow: $sx $sy $ss $sblur $scolor;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition($tspeed) {
+	-webkit-transition: $tspeed;
+	-moz-transition: $tspeed;
+	-khtml-transition: $tspeed;
+	-ms-transition: $tspeed;
+	-o-transition: $tspeed;
+	transition: $tspeed;
+}
+
+@mixin transform($tsf) {
+	-webkit-transform: $tsf;
+	-moz-transform: $tsf;
+	-khtml-transform: $tsf;
+	-ms-transform: $tsf;
+	-o-transform: $tsf;
+	transform: $tsf;
+}
+@mixin flb($flb) {
+	width: $flb;
+	-webkit-flex: 0 1 $flb;
+	flex: 0 1 $flb;
+	-ms-flex-preferred-size: $flb;
+	-webkit-flex-basis: $flb;
+	-ms-flex-basis: $flb;
+	flex-basis: $flb;
+	min-width: $flb;
+}
+@mixin flx($flx) {
+	-webkit-box-flex: $flx;
+	-webkit-flex: 0 0 $flx;
+	-ms-flex: 0 0 $flx;
+	flex: 0 0 $flx;
+	max-width: $flx;
+}
+@mixin flxfull($f) {
+	-webkit-box-flex: $f;
+	-webkit-flex: $f;
+	-ms-flex: $f;
+	flex: $f;
+}
+
+@import 'matches'

@@ -1,0 +1,28 @@
+<div class="game-online">
+  <div class="header-tabs">
+    <ul class="header-tabs-tabs game-online-tabs">
+      <li><a href="#online-chanel-1">Первый канал</a></li>
+      <li><a href="#online-chanel-2" class="ajax-content-load" data-href="ajax/ajx-online-2.html" data-loaded="false">Второй канал</a></li>
+      <li><a href="#online-chanel-3" class="ajax-content-load" data-href="ajax/ajx-online-3.html" data-loaded="false">Третий канал</a></li>
+    </ul>
+  </div>
+
+  <div id="online-chanel-1" class="game-online-tab">
+    <div class="game-online-player">
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/2-aMUWARbbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="online-chanel-2" class="game-online-tab"></div>
+
+  <div id="online-chanel-3" class="game-online-tab"></div>
+
+  <div class="banner"><a href="#"><img src="https:via.placeholder.com/965x90" alt="alt" loading="lazy"></a></div>
+
+  <div class="banner"><a href="#"><img src="https:via.placeholder.com/965x90" alt="alt" loading="lazy"></a></div>
+</div><!--.game-online-->
+<script>
+  jQuery(document).ready(function($){
+    $('.game-online-tabs a').tabs();
+  });
+</script>

@@ -1,0 +1,12 @@
+.extra .team-logo {
+	padding-right: 10px;
+	width: 10%;
+}
+.extra .h-teams-left,
+.extra .h-teams-right{
+	-ms-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.layouts-inner .top-news {
+	margin: 0px -50px 30px;
+}

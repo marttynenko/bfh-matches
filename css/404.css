@@ -1,0 +1,84 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-size: 16px;
+}
+body {
+	font-family: 'Ubuntu', serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.42;
+}
+.page-error {
+	min-height: 100%;
+	background: #3a0a08 url(../images/404-bg.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 50px 30px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	display: -ms-flex;
+	display: -ms-inline-flexbox;
+	display: -ms-flexbox;	
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	color: #FFF;
+	text-align: center;
+}
+.error-inner {
+	max-width: 845px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.error-logo {
+	margin-bottom: 25px;
+}
+.error-logo a {
+	display: block;
+	max-width: 135px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.error-title {
+	font-size: 52px;
+	font-weight: 500;
+	line-height: 1.05;
+	margin-bottom: 20px;
+}
+.error-txt {
+	font-size: 22px;
+	line-height: 36px;
+	margin-bottom: 28px;
+}
+
+.error-btns .btn {
+	width: 215px; margin: 10px;
+}
+
+.btn { display: inline-block; vertical-align: middle; max-width: 100%; height: 40px; line-height: 40px; white-space: nowrap; text-align: center; padding: 0px 25px; border-radius: 0; background-color: #21b049; border: 0 solid #21b049; font-family: "Ubuntu"; color: #FFF; text-transform: uppercase; font-size: 12px; font-size: 0.75rem; font-weight: 700; -webkit-transition: all .4s; -moz-transition: all .4s; -ms-transition: all .4s; -o-transition: all .4s; transition: all .4s; cursor: pointer; outline: none; text-decoration: none;
+}
+.btn.bordered {line-height: 38px; border: 1px solid rgba(255,255,255,0.5); color: #FFF; background-color: transparent;}
+
+.btn:hover { background-color: #198537; border-color: #198537; color: #FFF; text-decoration: none; }
+
+.btn.bordered:hover {background: rgba(255,255,255,0.5); border-color: rgba(255,255,255,0.5);}
+
+.btn .i-search {display: inline-block; vertical-align: middle; margin-right: 7px; position: relative; top: -1px; width: 16px; height: 16px; background: url(../images/icons/i-search-white.png) center no-repeat;}
