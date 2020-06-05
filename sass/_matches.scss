@@ -1077,8 +1077,74 @@
 }
 .game-online {
   padding-top: 10px;
-  
+
   &-player {
     margin-bottom: 30px;
+  }
+}
+
+.game-text-events {
+  background: #FFF;
+  margin-bottom: 30px;
+}
+.game-text {
+  &-crucial,
+  &-event {
+    border-bottom: 1px solid $border;
+    padding: 20px 45px;
+    @include fz(16);
+
+    a {
+      border: 0;
+    }
+  }
+  &-crucial {
+    font-weight: 500;
+  }
+  &-event {
+    display: -ms-flex;
+    display: flex;
+
+    &-time {
+      flex: 0 0 80px;
+      max-width: 80px;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+    &-icon {
+      flex: 0 0 60px;
+      max-width: 60px;
+      padding-right: 10px;
+    }
+    &-who {
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    &-type {
+      @include fz(14);
+    }
+  }
+}
+
+i[class*="svg-"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  background-size: contain !important;
+}
+.svg {
+  &-clock {
+    background: url(../images/matches/svg-clock.svg) no-repeat center;
+  }
+  &-change {
+    background: url(../images/matches/svg-change.svg) no-repeat center;
+  }
+  &-goal {
+    background: url(../images/matches/svg-goal.svg) no-repeat center;
+  }
+  &-eject {
+    background: url(../images/matches/svg-eject.svg) no-repeat center;
   }
 }
