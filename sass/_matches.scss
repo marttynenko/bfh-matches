@@ -1125,7 +1125,13 @@
     }
   }
 }
-
+.game-text-header {
+  @include fz(20);
+  text-align: center;
+  padding: 17px 30px;
+  border-bottom: 1px solid $border;
+  font-weight: 700;
+}
 i[class*="svg-"] {
   display: inline-block;
   vertical-align: middle;
@@ -1146,5 +1152,285 @@ i[class*="svg-"] {
   }
   &-eject {
     background: url(../images/matches/svg-eject.svg) no-repeat center;
+  }
+  &-edit {
+    background: url(../images/matches/svg-edit.svg) no-repeat center;
+  }
+  &-twitter {
+    background: url(../images/matches/svg-twitter.svg) no-repeat center;
+  }
+}
+.game-text-twitter {
+  background: #FFF;
+  margin-bottom: 30px;
+
+  .svg-twitter {
+    opacity: 0.5;
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 16px;
+  }
+}
+.game-twitter {
+  max-height: 1500px;
+  overflow-y: auto;
+}
+table.dark-table {
+  thead th {
+    background: #28292b;
+    font-weight: 700;
+    border: 1px solid #28292b;
+    color: #FFF;
+    padding: 15px 15px;
+    text-align: left;
+
+    &.centered {
+      text-align: center;
+    }
+  }
+  td {
+    padding: 15px;
+  }
+  tbody {
+    tr:nth-of-type(odd) {
+      background: #FFF;
+    }
+  }
+}
+
+.game-protocols {
+  padding-top: 10px;
+}
+.game-protocols-statistics {
+  table.dark-table {
+    th, td {
+      text-align: center;
+
+      &.lefted {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.person-snippet {
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 30px;
+  line-height: $lh;
+
+  a {
+    border: 0;
+  }
+  &-img {
+    flex: 0 0 130px;
+    max-width: 130px;
+
+    img {
+      border-radius: 65px;
+      display: block;
+    }
+  }
+  &-right {
+    padding-left: 15px;
+  }
+  &-name {
+    font-weight: 700;
+    @include fz(28);
+    margin-bottom: 4px;
+  }
+  &-team {
+    img {
+      display: inline-block !important;
+      margin-right: 7px;
+    }
+  }
+}
+.overview-block {
+  @include fz(16);
+  line-height: 1.6;
+  padding: 35px 50px;
+
+  h2, .h2 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.cite-dash {
+  position: relative;
+  margin: 40px 0;
+  height: 1px;
+  background: $border;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -12px;
+    background: #FFF url(../images/matches/cites.svg) no-repeat center;
+    background-size: contain;
+  }
+}
+.fotorama__thumb-border {
+  border-color: $red;
+}
+.fotorama__arr {
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 11px;
+    height: 23px;
+    background-size: contain !important;
+  }
+  &--prev {
+    &:after {
+      background: url(../images/matches/svg-prev.svg) center no-repeat;
+    }
+  }
+  &--next {
+    &:after {
+      background: url(../images/matches/svg-next.svg) center no-repeat;
+    }
+  }
+}
+.fotorama__video-play {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  margin-top: -85px;
+  background: url(../images/matches/svg-play.svg) center no-repeat !important;
+  background-size: contain !important;
+}
+.fotorama__nav__frame .fotorama__video-play {
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  background-position: center;
+}
+
+.popup-game {
+  background: #FFF;
+  max-width: 700px;
+  padding: 60px 40px 50px;
+  color: $font;
+
+  .h1, h1 {
+    padding: 0px 25px;
+    margin-bottom: 25px;
+  }
+  button.mfp-close {
+    width: 30px;
+    height: 30px;
+  }
+}
+.label-player {
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  border: 1px solid $border;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+  a {
+    border: 0;
+    color: $font;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+  &-photo {
+    position: relative;
+    flex: 0 0 85px;
+    max-width: 85px;
+    padding-right: 20px;
+
+    img {
+      display: block;
+      border-style: 33px;
+    }
+  }
+  &-number {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #00A0FF;
+    color: #FFF;
+    border-radius: 50%;
+  }
+  &-name {
+    font-weight: 700;
+    @include fz(16);
+    margin-bottom: 3px;
+  }
+  &-team {
+    @include fz(14);
+  }
+  input:checked + &-border {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 0px 1px #00A0FF, inset 0px 0px 0px 1px #00A0FF;
+  }
+}
+.popup-players-form-submit {
+  padding-top: 20px;
+
+  .btn {
+    display: block;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 500;
+    @include fz(28);
+    text-transform: none;
+  }
+  i.svg-vote {
+    position: relative;
+    top: -4px;
+  }
+}
+i.svg-vote {
+  width: 26px;
+  height: 26px;
+  background: url(../images/matches/svg-vote.svg) center no-repeat;
+  background-size: contain;
+}
+.popup-poll-thanks {
+  @include fz(36);
+}
+.popup-thanks {
+  &-hint {
+    font-weight: 700;
+    color: $primary;
   }
 }

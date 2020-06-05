@@ -1,3 +1,24 @@
+//lazy load для сторонних либ
+function lazyLibraryLoad(scriptSrc,linkHref,callback) {
+  let script = document.createElement('script');
+  script.src = scriptSrc;
+  if (!document.querySelector('script[src="'+scriptSrc+'"]')) {
+    document.querySelector('script[src*="script.js"]').before(script);
+
+    script.onload = callback
+  }
+
+  if (linkHref !== '') {
+    let style = document.createElement('link');
+    style.href = linkHref;
+    style.rel = 'stylesheet';
+    if (!document.querySelector('link[src="'+linkHref+'"]')) {
+      document.querySelector('link[href*="style.css"]').before(style);
+    }
+  }
+}
+
+
 document.addEventListener('DOMContentLoaded',function(){
   $('.game-tabs a').tabs();
   $('.facetoface-tabs a').tabs();
@@ -44,14 +65,6 @@ document.addEventListener('DOMContentLoaded',function(){
         error: function() {
           $this.attr('data-loaded','true');
           $tab.html('<div class="ui-error">Произошла непредвиденная ошибка. Обратитесь в поддержку сайта.</div>')
-        },
-        complete: function() {
-          
-          if ($tab.length && $tab.offset().top - $this.offset().top > document.documentElement.clientHeight / 2) {
-            $('html,body').animate({
-              scrollTop:$tab.offset().top - 30
-            },300)
-          }
         }
       })
     }
@@ -61,6 +74,11 @@ document.addEventListener('DOMContentLoaded',function(){
         $slick.slick("slickSetOption", '', false, true);
       },100);
     }
+    if ($tab.length && $tab.offset().top - $this.offset().top > document.documentElement.clientHeight / 2) {
+      $('html,body').animate({
+        scrollTop:$tab.offset().top - 30
+      },300)
+    }
   })
 
   $('.slick-game-events').slick({
@@ -68,5 +86,34 @@ document.addEventListener('DOMContentLoaded',function(){
     infinite: false
   })
 
-
 });
+
+
+function fotoramaOverviewInit(){
+  $('.fotorama-overview').fotorama({
+    width: '100%',
+    maxwidth: 860,
+    ratio: '3/2',
+    allowfullscreen: false,
+    nav: 'thumbs',
+    thumbwidth: 122,
+    thumbheight: 78,
+    thumbmargin: 10,
+    thumbborderwidth: 2,
+    thumbfit: 'cover'
+  })
+
+  $('.fotorama-video').fotorama({
+    width: '100%',
+    maxwidth: 860,
+    ratio: '16/9',
+    fit: 'cover',
+    allowfullscreen: false,
+    nav: 'thumbs',
+    thumbwidth: 280,
+    thumbheight: 160,
+    thumbmargin: 10,
+    thumbborderwidth: 2,
+    thumbfit: 'cover'
+  })
+}
