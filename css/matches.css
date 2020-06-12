@@ -333,9 +333,9 @@
 
 .game-poll-link { display: block; padding: 10px 0 15px; color: #FFF; border: 0; }
 
-.svg-okey { display: inline-block; margin-right: 12px; width: 26px; height: 30px; background: url(../images/matches/svg-okay.svg) center no-repeat; background-size: contain; }
+i.svg-okey { display: inline-block; vertical-align: baseline !important; margin-right: 12px !important; width: 26px !important; height: 30px !important; background: url(../images/matches/svg-okay.svg) center no-repeat; background-size: contain; }
 
-.svg-kubok { display: inline-block; margin-right: 12px; width: 25px; height: 25px; background: url(../images/matches/svg-kubok.svg) center no-repeat; background-size: contain; }
+i.svg-kubok { display: inline-block; vertical-align: baseline !important; margin-right: 12px !important; width: 25px !important; height: 25px !important; background: url(../images/matches/svg-kubok.svg) center no-repeat; background-size: contain; }
 
 .poll-winner { text-align: left; }
 
@@ -494,5 +494,102 @@ i.svg-vote { width: 26px; height: 26px; background: url(../images/matches/svg-vo
 .popup-poll-thanks { font-size: 36px; font-size: 2.25rem; }
 
 .popup-thanks-hint { font-weight: 700; color: #21b049; }
+
+ul.slick-dots { margin-bottom: 0; }
+
+ul.slick-dots li { padding-left: 0; margin: 3px; }
+
+ul.slick-dots li:before { content: none; }
+
+.slick-game-events ul.slick-dots { position: static; padding-top: 10px; text-align: center; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) { .game-header { padding: 30px 20px 45px; }
+  .game-tabs { overflow-x: auto; white-space: nowrap; }
+  .game-tabs a { display: flex; align-items: center; line-height: 1.05; max-width: 160px; white-space: normal; }
+  .game-tabs::-webkit-scrollbar { width: 0; height: 0; } }
+
+@media (max-width: 860px) and (min-width: 768px) { .game-player { font-size: 15px; font-size: 0.9375rem; min-height: 65px; }
+  .game-player-img { flex: 0 0 65px; max-width: 65px; }
+  .game-player-img img { max-width: 100%; }
+  .game-player-body { flex: 0 0 calc(100% - 65px); max-width: calc(100% - 65px); padding-left: 15px; }
+  .game-player-points { font-size: 16px; font-size: 1rem; color: #de1b1b; }
+  .game-player-points-label { font-size: 24px; font-size: 1.5rem; color: #de1b1b; }
+  .game-player-points-label div { color: #3f3f3f; } }
+
+@media (max-width: 768px) { .game-tabs a { flex: 0 0 auto; }
+  .game-header-dash { margin-bottom: 35px; }
+  .game-header-team { padding: 0px 10px; }
+  .game-header-team-logo { height: 50px; }
+  .game-header-team-logo img { max-height: 50px; }
+  .game-header-team-name { font-size: 20px; font-size: 1.25rem; line-height: 1.2; }
+  .header-tabs { display: block; border-bottom: 0; margin-bottom: 25px; }
+  .header-tabs-title { margin: 0; margin-bottom: 20px; }
+  .header-tabs ul.header-tabs-tabs { overflow-x: auto; overflow-y: visible; white-space: nowrap; position: relative; }
+  .header-tabs ul.header-tabs-tabs:after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 2px; background: #e9e9e9; }
+  .header-tabs ul.header-tabs-tabs a { padding-bottom: 10px; }
+  .header-tabs ul.header-tabs-tabs a:after { bottom: 2px; }
+  ul.header-tabs-tabs::-webkit-scrollbar { width: 0; height: 0; }
+  .clubs-news .side-news-items, .facetoface-games { max-height: none; overflow: visible; }
+  .poll-winner { align-items: flex-start; }
+  .poll-winner-img { flex: 0 0 85px; max-width: 85px; }
+  .poll-winner-number { width: 40px; height: 40px; line-height: 40px; margin-left: -20px; margin-top: -20px; }
+  .poll-winner-right { padding-left: 15px; padding-top: 0; }
+  .poll-winner-name { font-size: 18px; font-size: 1.125rem; }
+  .game-poll-teams, .game-poll-results { margin-left: -20px; margin-right: -20px; }
+  .game-poll-teams [class*="flx-"], .game-poll-results [class*="flx-"] { padding-left: 20px; padding-right: 20px; }
+  .game-twitter { overflow: visible; max-height: none; }
+  .person-snippet-img { flex: 0 0 85px; max-width: 85px; }
+  .person-snippet-name { font-size: 22px; font-size: 1.375rem; }
+  .fotorama__video-play { width: 80px; height: 80px; margin-left: -40px; margin-top: -40px; }
+  .fotorama__nav__frame .fotorama__video-play { width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; } }
+
+@media (max-width: 576px) { .game-tabs { margin-left: -15px; margin-right: -15px; }
+  .game-header { padding: 20px 10px 25px; margin-left: -15px; margin-right: -15px; }
+  .game-header-dash { margin-top: 20px; margin-bottom: 25px; }
+  .game-header-teams { position: relative; flex-wrap: wrap; align-items: flex-start; }
+  .game-header-team { flex: 0 0 50%; max-width: 50%; }
+  .game-header-info { padding-top: 20px; flex: 0 0 100%; max-width: 100%; order: 1; }
+  .game-header-info-score { position: absolute; left: 50%; top: 0px; transform: translateX(-50%); }
+  .game-protocol, .game-anonce, .overview-block { padding: 25px 30px; }
+  .game-protocol .game-block-title, .game-anonce .game-block-title, .overview-block .game-block-title { margin-bottom: 18px; }
+  .game-margin { margin-bottom: 40px; }
+  .facetoface-stats, .best-players { padding: 25px 20px 20px; }
+  .game-poll { padding: 25px 20px; }
+  .game-poll-title { font-size: 24px; font-size: 1.5rem; line-height: 1.2; }
+  .game-text-crucial, .game-text-event { padding-left: 20px; padding-right: 20px; }
+  .game-online iframe { max-height: 340px; } }
+
+@media (max-width: 533px) { .game-player { font-size: 15px; font-size: 0.9375rem; min-height: 65px; }
+  .game-player-img { flex: 0 0 65px; max-width: 65px; }
+  .game-player-img img { max-width: 100%; }
+  .game-player-body { flex: 0 0 calc(100% - 65px); max-width: calc(100% - 65px); padding-left: 15px; }
+  .game-player-points { font-size: 16px; font-size: 1rem; color: #de1b1b; text-align: center; }
+  .game-player-points-label { font-size: 24px; font-size: 1.5rem; color: #de1b1b; text-align: center; }
+  .game-player-points-label div { color: #3f3f3f; }
+  .poll-winner { display: block; text-align: center; }
+  .poll-winner-img { margin: 0px auto 25px; max-width: 85px; }
+  .poll-winner-right { padding-left: 0; }
+  .poll-winner-rates { display: inline-block; }
+  .fotorama__arr--prev { left: 15px; }
+  .fotorama__arr--next { right: 15px; } }
+
+@media (max-width: 480px) { .game-tabs, .game-header { margin-left: -10px; margin-right: -10px; }
+  .game-header-number, .game-header-place { font-size: 12px; font-size: 0.75rem; }
+  .game-header-info-score { font-size: 40px; font-size: 2.5rem; letter-spacing: -0.05em; }
+  .game-poll-teams, .game-poll-results { margin-left: -10px; margin-right: -10px; }
+  .game-poll-teams [class*="flx-"], .game-poll-results [class*="flx-"] { padding-left: 10px; padding-right: 10px; }
+  .person-snippet-name { font-size: 18px; font-size: 1.125rem; }
+  .overview-block { padding: 25px 20px 20px; }
+  .facetoface-item { padding: 20px; } }
+
+@media (max-width: 380px) { .game-header-team:first-child .game-header-team-logo { padding-right: 20px; }
+  .game-header-team:last-child .game-header-team-logo { padding-left: 20px; }
+  .game-tabs a { font-size: 14px; font-size: 0.875rem; max-width: 130px; }
+  .game-text-crucial, .game-text-event { padding-left: 15px; padding-right: 15px; font-size: 14px; font-size: 0.875rem; }
+  .game-text-event-time { flex: 0 0 60px; max-width: 60px; }
+  .game-text-event-icon { flex: 0 0 50px; max-width: 50px; }
+  .game-anonce { font-size: 14px; font-size: 0.875rem; }
+  .overview-block { font-size: 14px; font-size: 0.875rem; } }
 
 /*# sourceMappingURL=matches/css/maps/matches.css.map */

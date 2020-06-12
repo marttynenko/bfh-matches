@@ -83,25 +83,54 @@ document.addEventListener('DOMContentLoaded',function(){
 
   $('.slick-game-events').slick({
     slidesToShow: 3,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 533,
+        settings: {
+          slidesToShow: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   })
 
 });
 
 
 function fotoramaOverviewInit(){
+  let Thumbs = {
+    screen: document.documentElement.clientWidth > 768,
+    photoWidth: this.screen ? 122 : 90,
+    photoHeight: this.screen ? 78 : 60,
+    videoWidth: this.screen ? 280 : 120,
+    videoHeight: this.screen ? 160 : 90
+  }
+  
   $('.fotorama-overview').fotorama({
     width: '100%',
     maxwidth: 860,
     ratio: '3/2',
     allowfullscreen: false,
     nav: 'thumbs',
-    thumbwidth: 122,
-    thumbheight: 78,
+    thumbwidth: Thumbs.photoWidth,
+    thumbheight: Thumbs.photoHeight,
     thumbmargin: 10,
     thumbborderwidth: 2,
     thumbfit: 'cover'
   })
+
 
   $('.fotorama-video').fotorama({
     width: '100%',
@@ -110,8 +139,8 @@ function fotoramaOverviewInit(){
     fit: 'cover',
     allowfullscreen: false,
     nav: 'thumbs',
-    thumbwidth: 280,
-    thumbheight: 160,
+    thumbwidth: Thumbs.videoWidth,
+    thumbheight: Thumbs.videoHeight,
     thumbmargin: 10,
     thumbborderwidth: 2,
     thumbfit: 'cover'
