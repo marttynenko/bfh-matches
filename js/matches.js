@@ -106,6 +106,18 @@ document.addEventListener('DOMContentLoaded',function(){
     ]
   })
 
+  $(document).on('click','.game-snippet-protocol-toggler',function(){
+    let span = $(this).find('span');
+    const body = $(this).next('.game-snippet-protocol-body');
+    if (span.text() == 'Подробнее') {
+      body.slideDown(150);
+      span.text('Скрыть описание');
+    } else {
+      body.slideUp(150);
+      span.text('Подробнее');
+    }
+  });
+
 });
 
 

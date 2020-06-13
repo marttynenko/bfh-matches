@@ -1,0 +1,319 @@
+.game-snippet {
+  margin: 15px 0px 30px;
+  border: 1px solid $border;
+  @include fz(14);
+  line-height: $lh;
+  font-weight: 400;
+
+  a {
+    border-bottom: 0;
+  }
+
+  &-head {
+    background: $border;
+    padding: 10px 20px;
+    @include fz(13);
+
+    a {
+      color: $font;
+      border-bottom: 1px dotted #444;
+
+      &:hover {
+        color: $primary;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  &-body {
+    padding: 35px 20px;
+    text-align: center;
+  }
+  &-place {
+    display: inline-block;
+    position: relative;
+    padding-left: 16px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 10px;
+      height: 14px;
+      background: url(../images/matches/pin-gray.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+  &-team {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  &-info {
+    flex: 0 0 40%;
+  }
+  &-team {
+    &-logo {
+      display: inline-block;
+      height: 60px;
+      margin-bottom: 2px;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-height: 60px;
+      }
+    }
+    &-name {
+      display: block;
+      font-weight: 500;
+      @include fz(24);
+      line-height: 1.25;
+      margin-bottom: 5px;
+    }
+    &-string {
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    &-rates {
+      display: inline-block;
+      position: relative;
+      padding-left: 18px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 13px;
+        height: 11px;
+        background: url(../images/matches/rates-icon.svg) center no-repeat;
+        background-size: contain;
+      }
+      &:not(:last-child) {
+        margin-right: 7px;
+        padding-right: 10px;
+        border-right: 1px solid $border;
+      }
+    }
+  }
+  &-game-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $primary;
+
+    &.red {
+      background: $red;
+    }
+    &:hover {
+      box-shadow: 0px 0px 0px 1px $border, inset 0px 0px 0px 1px $border;
+    }
+  }
+  &-date {
+    margin-bottom: 10px;
+  }
+  &-time {
+    margin-bottom: 18px;
+    line-height: 1;
+    font-size: 0;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  &-digit {
+    display: inline-block;
+    vertical-align: baseline;
+    @include fz(34);
+    font-weight: 700;
+    min-width: 48px;
+    height: 65px;
+    line-height: 65px;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    text-align: center;
+    background: #EEE;
+    border-radius: 5px;
+    @include fz(34);
+  }
+  &-dots {
+    margin: 0px 4px;
+    display: inline-block;
+    vertical-align: baseline;
+    @include fz(34);
+    font-weight: 700;
+  }
+  &-broadcasts {
+    margin-bottom: 15px;
+
+    a, span {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &-tv {
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+
+    &.tooltip {
+      width: auto;
+      height: auto;
+      background: none;
+      border-radius: 0;
+      border: 0;
+      text-decoration: underline;
+      @include fz(14);
+      cursor: default;
+
+      &:hover {
+        text-decoration: none;
+        color: $font;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 12px;
+      height: 11px;
+      background: url(../images/matches/tv-icon.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+  &-internet {
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      background: url(../images/matches/play-icon.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+  &-ticket {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0px 20px;
+    background: $primary;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle; 
+      margin-right: 4px;
+      position: relative;
+      top: -2px;
+      width: 12px;
+      height: 12px;
+      background: url(../images/matches/ticket.svg) center no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      color: #FFF;
+      background: $primary_hover;
+    }
+  }
+  .tooltip-answer {
+    @include fz(14);
+    box-shadow: 0px 3px 15px rgba(#000,.1);
+    width: 200px;
+    margin-left: -32px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  &-time-simple {
+    font-weight: 700;
+    @include fz(25);
+  }
+  &-date-simple {
+    @include fz(22);
+    margin-bottom: 18px;
+  }
+  &-head-date {
+    margin-left: 7px;
+    padding-left: 10px;
+    border-left: 1px solid #a7a7a7;
+  }
+  &-score {
+    margin-bottom: 10px;
+  }
+  &-ending {
+    margin-bottom: 8px;
+    @include fz(20);
+  }
+  &-period {
+    display: inline-block;
+    margin-bottom: 5px;
+
+    &:not(:last-child):after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 20px;
+      margin: 0px 8px 5px;
+      background: #a7a7a7;
+    }
+  }
+  &-protocol {
+    &-toggler {
+      background: $border;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-align: center;
+      transition: all .3s;
+
+      span {
+        border-bottom: 1px dashed #a7a7a7;
+      }
+      &:hover {
+        background: lighten($border,3%);
+        span {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    &-body {
+      display: none;
+      border-top: 1px solid $border;
+      padding: 40px 55px;
+      background: url(../images/matches/game-snippet-bg.png) center top no-repeat;
+      @include fz(16);
+      line-height: 1.8;
+
+      h2, .h2, h3, .h3 {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
