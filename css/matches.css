@@ -610,7 +610,7 @@ ul.slick-dots li:before { content: none; }
 
 .game-snippet-team { flex: 0 0 30%; max-width: 30%; }
 
-.game-snippet-info { flex: 0 0 40%; }
+.game-snippet-info { flex: 0 0 40%; padding: 0px 15px; }
 
 .game-snippet-team-logo { display: inline-block; height: 60px; margin-bottom: 2px; }
 
@@ -642,7 +642,7 @@ ul.slick-dots li:before { content: none; }
 
 .game-snippet-broadcasts { margin-bottom: 15px; }
 
-.game-snippet-broadcasts a, .game-snippet-broadcasts span { margin-left: 6px; margin-right: 6px; }
+.game-snippet-broadcasts a, .game-snippet-broadcasts span { margin-left: 6px; margin-right: 6px; white-space: nowrap; }
 
 .game-snippet-broadcasts a { text-decoration: underline; }
 
@@ -695,5 +695,24 @@ ul.slick-dots li:before { content: none; }
 .game-snippet-protocol-body h2:first-child, .game-snippet-protocol-body .h2:first-child, .game-snippet-protocol-body h3:first-child, .game-snippet-protocol-body .h3:first-child { margin-top: 0; }
 
 .game-snippet-protocol-body p { margin-bottom: 15px; }
+
+@media (max-width: 1140px) { .game-snippet-head-date { display: block; margin-left: 0; padding-left: 0; border-left: 0; }
+  .game-snippet-team-name { font-size: 20px; font-size: 1.25rem; }
+  .game-snippet-digit { min-width: 40px; height: 58px; line-height: 58px; font-size: 30px; font-size: 1.875rem; }
+  .game-snippet-dots { font-size: 30px; font-size: 1.875rem; } }
+
+@media (max-width: 768px) { .game-snippet-head { padding-top: 7px; display: block; text-align: center; }
+  .game-snippet-head-date { display: inline; margin-left: 10px; }
+  .game-snippet-head, .game-snippet-body { padding-left: 15px; padding-right: 15px; }
+  .game-snippet-team-name { font-size: 18px; font-size: 1.125rem; }
+  .game-snippet-digit { min-width: 36px; height: 50px; line-height: 50px; font-size: 28px; font-size: 1.75rem; }
+  .game-snippet-dots { font-size: 28px; font-size: 1.75rem; }
+  .game-snippet-date-simple { line-height: 1.2; }
+  .game-snippet-protocol-body { padding: 30px; } }
+
+@media (max-width: 576px) { .game-snippet-body { padding: 25px 0; }
+  .game-snippet-teams { flex-wrap: wrap; }
+  .game-snippet-team { flex: 0 0 50%; max-width: 50%; padding: 0px 10px; }
+  .game-snippet-info { flex: 0 0 100%; max-width: 100%; order: 1; padding-top: 15px; } }
 
 /*# sourceMappingURL=matches/css/maps/matches.css.map */

@@ -50,6 +50,7 @@
   }
   &-info {
     flex: 0 0 40%;
+    padding: 0px 15px;
   }
   &-team {
     &-logo {
@@ -152,6 +153,7 @@
     a, span {
       margin-left: 6px;
       margin-right: 6px;
+      white-space: nowrap;
     }
     a {
       text-decoration: underline;
@@ -317,3 +319,101 @@
     }
   }
 }
+
+
+
+@media (max-width: 1140px) {
+
+  .game-snippet {
+    &-head {
+      &-date {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+      }
+    }
+    &-team {
+      &-name {
+        @include fz(20);
+      }
+    }
+    &-digit {
+      min-width: 40px;
+      height: 58px;
+      line-height: 58px;
+      @include fz(30);
+    }
+    &-dots {
+      @include fz(30);
+    }
+  }
+
+}//1140
+
+
+@media (max-width: 768px) {
+  .game-snippet {
+    &-head {
+      padding-top: 7px;
+      display: block;
+      text-align: center;
+
+      &-date {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+    &-head,
+    &-body {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &-team {
+      &-name {
+        @include fz(18);
+      }
+    }
+    &-digit {
+      min-width: 36px;
+      height: 50px;
+      line-height: 50px;
+      @include fz(28);
+    }
+    &-dots {
+      @include fz(28);
+    }
+    &-date-simple {
+      line-height: 1.2;
+    }
+    &-protocol-body {
+      padding: 30px;
+    }
+  }
+
+}//768px
+
+
+@media (max-width: 576px) {
+  
+  .game-snippet {
+    &-body {
+      padding: 25px 0;
+    }
+    &-teams {
+      flex-wrap: wrap;
+    }
+    &-team {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0px 10px;
+    }
+    &-info {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+      padding-top: 15px;
+    }
+  }
+
+}//576px
