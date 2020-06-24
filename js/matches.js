@@ -76,29 +76,34 @@ document.addEventListener('DOMContentLoaded',function(){
     }
     if ($tab.length && $tab.offset().top - $this.offset().top > document.documentElement.clientHeight / 2) {
       $('html,body').animate({
-        scrollTop:$tab.offset().top - 30
+        scrollTop:$tab.offset().top - 110
       },300)
     }
   })
 
+  let eventSlides = $('.slick-game-events .event-slide').length - 1 || 0;
   $('.slick-game-events').slick({
     slidesToShow: 3,
     infinite: false,
+    initialSlide: eventSlides > 3 ? eventSlides - 2 : 0,
     responsive: [
       {
         breakpoint: 860,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          initialSlide: eventSlides > 2 ? eventSlides - 1 : 0,
         }
       }, {
         breakpoint: 533,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          initialSlide: eventSlides,
         }
       }, {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          initialSlide: eventSlides,
           arrows: false,
           dots: true
         }
