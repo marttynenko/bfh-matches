@@ -1,0 +1,959 @@
+<!--#include file="header.html"-->
+
+<div class="flex-row flex-layout">
+	<main class="content flx-9 flx-m-12">
+    <div class="game-header">
+      <img src="images/matches/header-bg.jpg" alt="alt" loading="lazy" class="game-header-bg">
+      <div class="game-header-number">Экстралига, игра №164 <span class="v-dash">|</span> 19:00, 1 мая 2020 (пятница)</div>
+      <div class="game-header-place"><a href="#">Спортивно-развлекательный центр г. Солигорск</a>, г. Солигорск</div>
+      <div class="game-header-dash"></div>
+      <div class="game-header-teams flex valign-center">
+        <div class="game-header-team">
+          <a href="#" class="game-header-team-logo"><img src="images/calendar/team-1.png" alt="team" loading="lazy"></a>
+          <a href="#" class="game-header-team-name">Шахтер</a>
+          <div class="game-header-team-location">Солигорск</div>
+          <div class="game-header-team-rates">6</div>
+          <div class="game-header-team-games">
+            <a href="#" class="game-header-game-link"></a>
+            <a href="#" class="game-header-game-link"></a>
+            <a href="#" class="game-header-game-link"></a>
+            <a href="#" class="game-header-game-link red"></a>
+            <a href="#" class="game-header-game-link red"></a>
+          </div>
+        </div><!--.team-->
+
+        <div class="game-header-info">
+          <div class="game-header-info-score">
+            <span class="winner">4</span> : <span>2</span>
+          </div>
+          <div class="game-header-info-periods">
+            <div>
+              <span class="game-header-period">0:1</span>
+              <span class="game-header-period">1:1</span>
+              <span class="game-header-period">3:0</span>
+            </div>          
+          </div>
+          <div class="game-header-info-current">Послематчевые броски</div>
+        </div><!--.info-->
+
+        <div class="game-header-team">
+          <a href="#" class="game-header-team-logo"><img src="images/matches/team-midi-2.png" alt="team" loading="lazy"></a>
+          <a href="#" class="game-header-team-name">Гомель</a>
+          <div class="game-header-team-location">Гомель</div>
+          <div class="game-header-team-rates">4</div>
+          <div class="game-header-team-games">
+            <a href="#" class="game-header-game-link red"></a>
+            <a href="#" class="game-header-game-link red"></a>
+            <a href="#" class="game-header-game-link red"></a>
+            <a href="#" class="game-header-game-link"></a>
+            <a href="#" class="game-header-game-link"></a>
+          </div>
+        </div><!--.team-->
+      </div>
+    </div><!--.game-header-->
+    <div class="game-tabs game-margin flex">
+      <a href="#game-tab-1">Перед матчем</a>
+      <a href="#game-tab-2" class="ajax-content-load" data-href="ajax/ajx-text-shahter.html" data-loaded="false">Текстовая трансляция</a>
+      <a href="#game-tab-3" class="ajax-content-load" data-href="ajax/ajx-online.html" data-loaded="false">Онлайн трансляция</a>
+      <a href="#game-tab-4" class="ajax-content-load" data-href="ajax/ajx-overview-shahter.html" data-loaded="false">Обзор матча</a>
+      <a href="#game-tab-5" class="ajax-content-load" data-href="ajax/ajx-protocol-shahter.html" data-loaded="false">Протокол</a>
+    </div>
+
+    <div class="game-events">
+      <div class="h2 game-block-title">Лента событий матча</div>
+      <div class="slick-game-events">
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-name">Начало игры</div>
+            </div>
+            <div class="event-item-type"></div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-img">
+                <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                <div class="event-item-icontype change"></div>
+                <div class="event-item-player-number">18</div>
+              </div>
+              <div class="event-item-right">
+                <div class="event-item-team"><a href="#">Шахтер</a></div>
+                <span class="event-item-date">00:00</span>, <a href="#" class="event-item-player">Алексей Коновалов</a>
+              </div>
+            </div>
+            <div class="event-item-type">Вратарь</div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-img">
+                <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                <div class="event-item-icontype goal"></div>
+                <div class="event-item-player-number" style="background: #FF6147;">11</div>
+              </div>
+              <div class="event-item-right">
+                <div class="event-item-team"><a href="#">Гомель</a></div>
+                <span class="event-item-date">00:10</span>, <a href="#" class="event-item-player">Станислав Кривошеев</a>, РС, ШБ, +1, -1
+              </div>
+            </div>
+            <div class="event-item-type">02 Кривошеев А., 02 Терещенко Ф.</div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-name">Начало 2 периода</div>
+            </div>
+            <div class="event-item-type"></div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-img">
+                <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                <div class="event-item-icontype eject"></div>
+                <div class="event-item-player-number" style="background: #FF6147;">3</div>
+              </div>
+              <div class="event-item-right">
+                <div class="event-item-team"><a href="#">Гомель</a></div>
+                <span class="event-item-date">00:32</span>, <a href="#" class="event-item-player">Станислав Гульнар</a>
+              </div>
+            </div>
+            <div class="event-item-type">Удаление 2 минуты</div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-img">
+                <div class="event-item-icon clock"></div>
+              </div>
+              <div class="event-item-right">
+                <div class="event-item-team"><a href="#">Гомель</a></div>
+                <span class="event-item-date">00:35</span>
+              </div>
+            </div>
+            <div class="event-item-type">Таймаут</div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-img">
+                <div class="event-item-icon eject"></div>
+              </div>
+              <div class="event-item-right">
+                <div class="event-item-team"><a href="#">Шахтер</a></div>
+                <span class="event-item-date">00:41</span>
+              </div>
+            </div>
+            <div class="event-item-type">Штраф на представителя команды</div>
+          </div>
+        </div>
+
+        <div class="event-slide">
+          <div class="event-item">
+            <div class="event-item-body flex">
+              <div class="event-item-name">Начало послематчевых бросков</div>
+            </div>
+            <div class="event-item-type"></div>
+          </div>
+        </div>
+      </div><!--.slick-->
+    </div><!--.game-events-->
+
+    <div class="game-protocol ui-block">
+      <div class="h2 game-block-title">Протокол</div>
+      0:1 – 01:30 Зайчик
+      0:2 – 22:12 Межейников (Субхи, Ковалев) 
+      1:2 – 24:06 Дадонов (Рядченко, Феклистов) 
+      2:2 – 47: 31 Боголейша (Казнадей), ГМ 
+      3:2 – 50:43 Дадонов (Феклистов, Боголейша), ГБ 
+      4:2 – 59:55 Феклистов (Дадонов, Бойко), ПВ.<br>
+      <strong>Штраф</strong>: 10 – 14<br>
+      <strong>Броски</strong>: 41 (7+14+20) – 18 (8+7+3)<br> 
+      <strong>Лучшие игроки</strong>: Боголейша – Межейников 
+    </div><!--.game-protocol-->
+
+    <div class="game-tab-content" id="game-tab-1">
+      <div class="game-anonce game-margin">
+        <div class="h2 game-block-title">Анонс</div>
+        <p>В Солигорске встретятся бронзовый призер прошлого сезона и команда, которую многие в шутку называли «забронзовевшей» в последние годы.</p>
+        <p>«Шахтер» под руководством Юрия Файкова остановился в миллиметрах от «финала четырех» Кубка Салея – не хватило победы над Молодечно по буллитам. Разумеется, в сезоне «горняки» хотят исправить ситуацию.</p>
+        <div class="game-anonce-hidden"><p>Летом солигорчане собрали очень хороший состав, который продолжают
+          модифицировать до сих пор. Во вторник стало известно, что контракты с
+          клубом заключили многолетний лидер обороны Роман Достанко (отъезжал
+          на просмотр в минское «Динамо»), габаритный защитник Кирилл Чайка
+          (пропустил прошлый сезон, но имеет за плечами опыт игры за все сборные) и
+          «возвращенец» из России Роман Крикуненко (новополочанин в детском
+          возрасте уехал в страну-соседку и даже выступал в КХЛ и за тамошнюю
+          юношескую сборную). Несомненно одно: «Шахтер» остается большим
+          претендентом на медали.</p>
+        <p>На «Гомеле» многие поспешили поставить крест. С прошлого года «рысей»
+          потряхивало из-за финансовых проблем, но новый тренер Сергей Стась
+          собрал приличную банду, которая неплохо пошумела в Кубке Салея.
+          Гомельчане даже разобрались в гостях с вице-чемпионом «Неманом» (3:0),
+          но команда не вышла в «финал четырех» из-за недооценки «Бобруйска» (2:4).
+          Тем не менее, такой «Гомель» способен потрепать «Шахтер» - да и не только
+          его.</p></div>
+        <a href="javascript:void(0)" class="game-anonce-link">Подробнее</a>
+      </div><!--.anonce-->
+
+      <div class="game-facetoface game-margin">
+        <div class="header-tabs flex valign-baseline">
+          <div class="h2 header-tabs-title">Очные встречи в текущем сезоне</div>
+          <ul class="header-tabs-tabs facetoface-tabs">
+            <li><a href="#facetoface-tab-1">Матчи</a></li>
+            <li><a href="#facetoface-tab-2" class="ajax-content-load" data-href="ajax/ajx-facetoface-players-shahter.html" data-loaded="false">Игроки</a></li>
+          </ul>
+        </div>
+
+        <div id="facetoface-tab-1" class="facetoface-tab-content">
+          <div class="flex-row">
+            <div class="flx-6 flx-x-12">
+              <div class="facetoface-games">
+                <div class="facetoface-item flex align-justify">
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name">Шахтер</a>
+                    <div class="facetoface-item-location">Минск</div>
+                  </div>
+
+                  <div class="facetoface-item-result">
+                    <a href="#" class="facetoface-item-total">2 : <span class="winner">6</span></a>
+                    <div class="facetoface-item-remark">Бул</div>
+                    <div class="facetoface-item-date">06.05.2020</div>
+                  </div>
+
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name winner">Гомель</a>
+                    <div class="facetoface-item-location">Гомель</div>
+                  </div>
+                </div>
+
+                <div class="facetoface-item flex align-justify">
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name">Шахтер</a>
+                    <div class="facetoface-item-location">Минск</div>
+                  </div>
+
+                  <div class="facetoface-item-result">
+                    <a href="#" class="facetoface-item-total">1 : <span class="winner">7</span></a>
+                    <div class="facetoface-item-remark">Овертайм</div>
+                    <div class="facetoface-item-date">08.05.2020</div>
+                  </div>
+
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name winner">Гомель</a>
+                    <div class="facetoface-item-location">Гомель</div>
+                  </div>
+                </div>
+
+                <div class="facetoface-item flex align-justify">
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name winner">Шахтер</a>
+                    <div class="facetoface-item-location">Минск</div>
+                  </div>
+
+                  <div class="facetoface-item-result">
+                    <a href="#" class="facetoface-item-total"><span class="winner">6</span> : 3</a>
+                    <div class="facetoface-item-remark">Бул</div>
+                    <div class="facetoface-item-date">06.05.2020</div>
+                  </div>
+
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name ">Гомель</a>
+                    <div class="facetoface-item-location">Гомель</div>
+                  </div>
+                </div>
+
+                <div class="facetoface-item flex align-justify">
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name winner">Шахтер</a>
+                    <div class="facetoface-item-location">Минск</div>
+                  </div>
+
+                  <div class="facetoface-item-result">
+                    <a class="facetoface-item-total"><span class="winner">2</span> : 1</a>
+                    <div class="facetoface-item-remark">Бул</div>
+                    <div class="facetoface-item-date">06.05.2020</div>
+                  </div>
+
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name ">Гомель</a>
+                    <div class="facetoface-item-location">Гомель</div>
+                  </div>
+                </div>
+
+                <div class="facetoface-item flex align-justify">
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name winner">Шахтер</a>
+                    <div class="facetoface-item-location">Минск</div>
+                  </div>
+
+                  <div class="facetoface-item-result">
+                    <a class="facetoface-item-total"><span class="winner">2</span> : 1</a>
+                    <div class="facetoface-item-remark">Бул</div>
+                    <div class="facetoface-item-date">06.05.2020</div>
+                  </div>
+
+                  <div class="facetoface-item-team">
+                    <div class="facetoface-item-logo"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></div>
+                    <a href="#" class="facetoface-item-name ">Гомель</a>
+                    <div class="facetoface-item-location">Гомель</div>
+                  </div>
+                </div>
+              </div>
+            </div><!--.flx-->
+
+            <div class="flx-6 flx-x-12">
+              <div class="facetoface-stats">
+                <div class="facetoface-stats-head flex align-justify">
+                  <div class="iconed-team">
+                    <div class="iconed-team-logo"><img src="images/calendar/team-1.png" alt="alt"></div>
+                    <div class="iconed-team-name"><a href="#">Шахтер</a></div>
+                    <div class="iconed-team-rating"><i class="i-rating"></i>6</div>
+                  </div>
+
+                  <div class="iconed-team righted">
+                    <div class="iconed-team-logo"><img src="images/matches/team-mini-2.png" alt="alt"></div>
+                    <div class="iconed-team-name"><a href="#">Гомель</a></div>
+                    <div class="iconed-team-rating"><i class="i-rating"></i>6</div>
+                  </div>
+                </div><!--.head-->
+
+                <div class="ratio-line">
+                  <div class="ratio-line-labels flex align-justify valign-end">
+                    <div class="ratio-line-value">14</div>
+                    <div class="ratio-line-label">Заброшенные шайбы</div>
+                    <div class="ratio-line-value">20</div>
+                  </div>
+                  <div class="ratio-line-bar" style="background: #FF6147;">
+                    <div class="ratio-line-filled" style="width: 38%; background: #00A0FF;"></div>
+                  </div>
+                </div>
+
+                <div class="ratio-line">
+                  <div class="ratio-line-labels flex align-justify valign-end">
+                    <div class="ratio-line-value">20</div>
+                    <div class="ratio-line-label">Бросков по воротам</div>
+                    <div class="ratio-line-value">19</div>
+                  </div>
+                  <div class="ratio-line-bar" style="background: #FF6147;">
+                    <div class="ratio-line-filled" style="width: 52%; background: #00A0FF;"></div>
+                  </div>
+                </div>
+
+                <div class="ratio-line">
+                  <div class="ratio-line-labels flex align-justify valign-end">
+                    <div class="ratio-line-value">14</div>
+                    <div class="ratio-line-label">Штрафных минут</div>
+                    <div class="ratio-line-value">20</div>
+                  </div>
+                  <div class="ratio-line-bar" style="background: #FF6147;">
+                    <div class="ratio-line-filled" style="width: 38%; background: #00A0FF;"></div>
+                  </div>
+                </div>
+
+                <div class="ratio-line">
+                  <div class="ratio-line-labels flex align-justify valign-end">
+                    <div class="ratio-line-value">2</div>
+                    <div class="ratio-line-label">Выигрыши в овертайме</div>
+                    <div class="ratio-line-value">0</div>
+                  </div>
+                  <div class="ratio-line-bar" style="background: #FF6147;">
+                    <div class="ratio-line-filled" style="width: 100%; background:#00A0FF; "></div>
+                  </div>
+                </div>
+              </div><!--.facetoface-stats-->
+            </div><!--.flx-->
+            
+          </div><!--.row-->
+        </div><!--.facetoface-tab-content-->
+
+        <div id="facetoface-tab-2" class="facetoface-tab-content">
+          <p>Содержимое вкладки</p>
+        </div><!--.facetoface-tab-content-->
+
+        <div class="banner"><a href="#"><img src="https:via.placeholder.com/965x90" alt="alt" loading="lazy"></a></div>
+      </div><!--.game-facetoface-->
+
+      <div class="game-best-players game-margin">
+        <div class="h2 game-block-title">Лучшие игроки</div>
+        <div class="best-players">
+          <div class="best-players-head flex align-justify">
+            <div class="iconed-team">
+              <div class="iconed-team-logo"><img src="images/calendar/team-1.png" alt="alt"></div>
+              <div class="iconed-team-name"><a href="#">Шахтер</a></div>
+            </div>
+
+            <div class="iconed-team righted">
+              <div class="iconed-team-logo"><img src="images/matches/team-mini-2.png" alt="alt"></div>
+              <div class="iconed-team-name"><a href="#">Гомель</a></div>
+            </div>
+          </div><!--.head-->
+
+          <div class="best-players-group">
+            <div class="h3 centered">Нападающие</div>
+            <div class="flex-row">
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--.group-->
+
+          <div class="best-players-group">
+            <div class="h3 centered">Защитники</div>
+            <div class="flex-row">
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">49</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points">25 (16+10)</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div><!--.group-->
+
+          <div class="best-players-group">
+            <div class="h3 centered">Вратари</div>
+            <div class="flex-row">
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number">11</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points-label">30<div>%ОБ</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flx-6 flx-x-12">
+                <div class="game-player flex">
+                  <a href="#" class="game-player-img">
+                    <img src="images/matches/player-1.jpg" alt="alt" loading="lazy">
+                    <div class="game-player-number" style="background: #FF6147;">23</div>
+                  </a>
+                  <div class="game-player-body">
+                    <a href="#" class="game-player-name">Алексей Терещенко</a>
+                    <div class="game-player-points-label">30<div>%ОБ</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--.group-->
+        </div>
+
+        <div class="banner"><a href="#"><img src="https:via.placeholder.com/965x90" alt="alt" loading="lazy"></a></div>
+      </div><!--.game-best-players-->
+
+      <div class="game-poll">
+        <img src="images/matches/game-poll-1.jpg" alt="alt" loading="lazy" class="game-poll-bg">
+        <div class="game-poll-header centered">
+          <div class="game-poll-title"><i class="svg-okey"></i>Выберите лучших игроков матча!</div>
+          <p>Нажми на команду и сделай свой выбор</p>
+        </div>
+        <div class="game-poll-teams flex-row">
+          <div class="flx-6">
+            <a href="javascript:void(0)" data-href="popup-players-poll.html" class="ajax-mfp game-poll-link">
+              <div class="game-header-team-logo"><img src="images/calendar/team-1.png" alt="team" loading="lazy"></div>
+              <div class="game-header-team-name">Шахтер</div>
+            </a>
+          </div>
+          <div class="flx-6">
+            <a href="javascript:void(0)" data-href="popup-players-poll.html" class="ajax-mfp game-poll-link">
+              <div class="game-header-team-logo"><img src="images/matches/team-midi-2.png" alt="team" loading="lazy"></div>
+              <div class="game-header-team-name">Гомель</div>
+            </a>
+          </div>
+        </div>
+      </div><!--.game-poll-->
+
+      <div class="game-poll results">
+        <img src="images/matches/game-poll-1.jpg" alt="alt" loading="lazy" class="game-poll-bg">
+        <div class="game-poll-header centered">
+          <div class="game-poll-title"><i class="svg-kubok"></i>Лучшие игроки матча!</div>
+        </div>
+        <div class="game-poll-results flex-row">
+          <div class="flx-6">
+            <div class="poll-winner flex">
+              <div class="poll-winner-img">
+                <a href="#"><img src="images/matches/player-big-2.jpg" alt="alt" laoding="lazy"></a>
+                <div class="poll-winner-number">27</div>
+              </div>
+              <div class="poll-winner-right">
+                <a href="#" class="poll-winner-team"><i class="poll-winner-team-img"><img src="images/calendar/team-1.png" alt="alt" loading="lazy"></i>Шахтер</a>
+                <div class="poll-winner-name"><a href="#">Сергей Прохоров</a></div>
+                <div class="poll-winner-amplua">Нападающий</div>
+                <div class="poll-winner-rates"><span>250 голосов</span></div>
+              </div>
+            </div><!--.poll-winner-->
+          </div><!--.flx-6-->
+          <div class="flx-6">
+            <div class="poll-winner flex">
+              <div class="poll-winner-img">
+                <a href="#"><img src="images/matches/player-big-2.jpg" alt="alt" laoding="lazy"></a>
+                <div class="poll-winner-number" style="background: #FF6147;">27</div>
+              </div>
+              <div class="poll-winner-right">
+                <a href="#" class="poll-winner-team"><i class="poll-winner-team-img"><img src="images/matches/team-mini-2.png" alt="alt" loading="lazy"></i>Гомель</a>
+                <div class="poll-winner-name"><a href="#">Сергей Мозякин</a></div>
+                <div class="poll-winner-amplua">Вратарь</div>
+                <div class="poll-winner-rates"><span>250 голосов</span></div>
+              </div>
+            </div><!--.poll-winner-->
+          </div><!--.flx-6-->
+        </div>
+      </div><!--.game-poll-->
+
+      <div class="banner"><a href="#"><img src="https:via.placeholder.com/965x90" alt="alt" loading="lazy"></a></div>
+    </div><!--.game-tab-content-->
+
+    <div class="game-tab-content" id="game-tab-2"></div>
+    <div class="game-tab-content" id="game-tab-3"></div>
+    <div class="game-tab-content" id="game-tab-4"></div>
+    <div class="game-tab-content" id="game-tab-5"></div>
+  </main>
+
+  <aside class="sidebar flx-3 flx-m-12">
+    <div class="game-data">
+      <div class="game-data-title">Статистика</div>
+      <div class="game-data-strings">
+        <div class="data-string flex">
+          <div class="data-string-label">Броски</div>
+          <div class="data-string-value">19:38</div>
+        </div>
+        <div class="data-string flex">
+          <div class="data-string-label">ВБР</div>
+          <div class="data-string-value">30:21</div>
+        </div>
+        <div class="data-string flex">
+          <div class="data-string-label">Штраф</div>
+          <div class="data-string-value">4:4</div>
+        </div>
+        <div class="data-string flex">
+          <div class="data-string-label">БЛБ</div>
+          <div class="data-string-value">17:9</div>
+        </div>
+        <div class="data-string flex">
+          <div class="data-string-label">Зрители</div>
+          <div class="data-string-value">8428</div>
+        </div>
+        <div class="data-string flex">
+          <div class="data-string-label">Судьи</div>
+          <div class="data-string-value">Фатеев, Гусев - Вилюгин, Лазарев</div>
+        </div>
+      </div>
+
+      <div class="game-data-title">Составы</div>
+      <div class="game-data-team">
+        <div class="iconed-team">
+          <div class="iconed-team-logo"><img src="images/calendar/team-1.png" alt="alt"></div>
+          <div class="iconed-team-name"><a href="#">Шахтер</a></div>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-goalkeepers"></i>Вратари</div>
+          44. <a href="#">Шикин</a>, 30. <a href="#">Барулин</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>1-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>2-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>3-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>4-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>5-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+      </div>
+
+      <div class="game-data-team">
+        <div class="iconed-team">
+          <div class="iconed-team-logo"><img src="images/matches/team-mini-2.png" alt="alt"></div>
+          <div class="iconed-team-name"><a href="#">Гомель</a></div>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-goalkeepers"></i>Вратари</div>
+          44. <a href="#">Шикин</a>, 30. <a href="#">Барулин</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>1-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>2-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>3-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>4-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+        <div class="game-data-group">
+          <div class="game-data-group-title"><i class="svg-stick"></i>5-я пятерка</div>
+          7. <a href="#">Будкин</a>, 81. <a href="#">Коллинз</a>, 87. <a href="#">Россен</a>, 99. <a href="#">Полунин</a>, 13. <a href="#">Каретник</a>
+        </div>
+      </div>
+    </div><!--.game-data-->
+
+    <div class="banner">
+      <a href="#"><img src="images/matches/banner-green-towns.jpg" alt="alt" loading="lazy"></a>
+    </div>
+
+    <div class="clubs-news side-news white-block">
+			<div class="block-title">Новости клубов</div>
+
+			<div class="side-news-items">
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">14 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Белорусский форвард продолжит карьеру в сильнейшей лиге Германии</span>
+						<img src="images/examples/rectangle-1.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">13 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/matches/team-mini-2.png" alt="logo"></div>
+						<span class="title">После матчевая пресс-конференция игроков сборной Беларуси</span>
+						<img src="images/examples/rectangle-2.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">12 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Фотоотчет: открытая тренировка сборной РБ по хоккею</span>
+						<img src="images/examples/rectangle-3.jpg" alt="img" class="bg">
+					</a>
+        </div>
+        <div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">14 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Белорусский форвард продолжит карьеру в сильнейшей лиге Германии</span>
+						<img src="images/examples/rectangle-1.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">13 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/matches/team-mini-2.png" alt="logo"></div>
+						<span class="title">После матчевая пресс-конференция игроков сборной Беларуси</span>
+						<img src="images/examples/rectangle-2.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">12 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Фотоотчет: открытая тренировка сборной РБ по хоккею</span>
+						<img src="images/examples/rectangle-3.jpg" alt="img" class="bg">
+					</a>
+        </div>
+        <div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">14 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Белорусский форвард продолжит карьеру в сильнейшей лиге Германии</span>
+						<img src="images/examples/rectangle-1.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">13 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/matches/team-mini-2.png" alt="logo"></div>
+						<span class="title">После матчевая пресс-конференция игроков сборной Беларуси</span>
+						<img src="images/examples/rectangle-2.jpg" alt="img" class="bg">
+					</a>
+				</div>
+				<div class="side-news-item">
+					<a href="news-item.html">
+            <div class="date">12 декабря 2018</div>
+            <div class="clubs-news-logo"><img src="images/calendar/team-1.png" alt="logo"></div>
+						<span class="title">Фотоотчет: открытая тренировка сборной РБ по хоккею</span>
+						<img src="images/examples/rectangle-3.jpg" alt="img" class="bg">
+					</a>
+				</div>
+			</div>
+    </div><!--.last-news-->
+    
+    <div class="banner">
+      <a href="#"><img src="images/matches/banner-green-towns.jpg" alt="alt" loading="lazy"></a>
+    </div>
+  </aside>
+</div><!--.flex-row-->
+
+
+<div class="slick-related-block block">
+	<div class="flex-head">
+		<div class="h2">Новости о матче</div>
+		<div class="slick-related-arrows head-arrows"></div>
+	</div>
+
+	<div class="slick-related">
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-2.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок второй новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+					<div class="news-bottom">
+						<div class="date">
+							<i class="i-clock-gray"></i>16 декабря 2018
+						</div>
+						<div class="comments">
+							<i class="i-comments"></i>4
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-3.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок третьей новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+				</div>
+				<div class="news-bottom">
+					<div class="date">
+						<i class="i-clock-gray"></i>19 декабря 2018
+					</div>
+					<div class="comments">
+						<i class="i-comments"></i>29
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-2.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок второй новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+				</div>
+				<div class="news-bottom">
+					<div class="date">
+						<i class="i-clock-gray"></i>16 декабря 2018
+					</div>
+					<div class="comments">
+						<i class="i-comments"></i>4
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-2.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок второй новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+				</div>
+				<div class="news-bottom">
+					<div class="date">
+						<i class="i-clock-gray"></i>16 декабря 2018
+					</div>
+					<div class="comments">
+						<i class="i-comments"></i>4
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-3.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок третьей новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+				</div>
+				<div class="news-bottom">
+						<div class="date">
+							<i class="i-clock-gray"></i>19 декабря 2018
+						</div>
+						<div class="comments">
+							<i class="i-comments"></i>29
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="news-item">
+				<div class="img">
+					<a href="news-item.html"><img src="images/examples/news-2.jpg" class="bg" alt="alt"></a>
+					<div class="stickers"><a href="national-team-news.html" class="sticker">Высшая лига</a></div>
+				</div>
+				<div class="body">
+					<div class="title"><a href="news-item.html">Заголовок второй новости</a></div>
+					<div class="txt">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами коварный точках мир, домах, рукописи грамматики языкового осталось реторический предупреждал лучше. Рекламных щеке, встретил страна переписывается составитель ему речью?</div>
+				</div>
+				<div class="news-bottom">
+						<div class="date">
+							<i class="i-clock-gray"></i>16 декабря 2018
+						</div>
+						<div class="comments">
+							<i class="i-comments"></i>4
+						</div>
+					</div>
+			</div>
+		</div>
+	</div><!--.slick-related-->
+</div><!--.slick-related-block-->
+
+
+<!--#include file="footer.html"-->

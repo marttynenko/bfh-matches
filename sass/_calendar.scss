@@ -1,0 +1,617 @@
+$home: #0192E8;
+$away: #737373;
+
+.calendar-filter {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $border;
+}
+.flx-calendar-filter {
+  flex: 0 0 20%;
+  max-width: 20%;
+
+  .jq-selectbox__select {
+    background: #FFF !important;
+  }
+}
+
+.calendar-settings {
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.calendar-menu {
+  font-size: 0;
+  margin-bottom: 10px;
+
+  a {
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    padding: 0px 25px;
+    border: 1px solid $border;
+    margin-right: -1px;
+    color: $font;
+    @include fz($fontsize);
+    position: relative;
+
+    &:hover {
+      color: #00205B;
+      background: rgba(#00205b,0.1);
+      border-color: rgba(#00205b,0.1);
+      z-index: 1;
+    }
+    &.active {
+      color: #FFF;
+      background: #00205B;
+      border-color: #00205B;
+    }
+  }
+  &-circle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0192E8;
+
+    &.gray {
+      background: #737373;
+    }
+  }
+}
+.clubs-news-logo {
+  max-width: 20px;
+
+  img {
+    max-height: 20px;
+  }
+}
+.svg-calendar-view {
+  width: 20px;
+  height: 20px;
+  fill: #3f3f3f;
+}
+.calendar-views {
+  font-size: 0;
+  margin-bottom: 10px;
+
+  // &-link {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   margin-left: 25px;
+  //   opacity: 0.3;
+  //   border-bottom: 0;
+
+  //   &:hover {
+  //     opacity: 0.8;
+  //   }
+
+  //   &.active {
+  //     opacity: 1;
+  //   }
+  // }
+  &-link {
+    display: inline-block;
+    height: 40px;
+    padding: 9px 15px;
+    border: 1px solid $border;
+    margin-right: -1px;
+    color: $font;
+    @include fz($fontsize);
+    position: relative;
+
+    &:hover {
+      color: #00205B;
+      background: rgba(#00205b,0.1);
+      border-color: rgba(#00205b,0.1);
+      z-index: 1;
+    }
+    &.active {
+      color: #FFF;
+      background: #00205B;
+      border-color: #00205B;
+
+      svg {
+        fill: #FFF;
+      }
+    }
+  }
+}
+
+.calendar-nav {
+  margin-bottom: 40px;
+  text-align: center;
+  @include fz(16);
+
+  &-current {
+    margin: 0px 30px;
+    @include fz(24);
+    font-weight: 700;
+    color: #000;
+  }
+  &-prev {
+    position: relative;
+    padding-left: 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 8px;
+      height: 12px;
+      margin-top: -6px;
+      background: url(../images/svg/arrow-left.svg) center no-repeat;
+      background-size: contain;
+      opacity: 0.3;
+    }
+  }
+  &-next {
+    position: relative;
+    padding-right: 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 8px;
+      height: 12px;
+      margin-top: -6px;
+      background: url(../images/svg/arrow-right.svg) center no-repeat;
+      background-size: contain;
+      opacity: 0.3;
+    }
+  }
+  a {
+    color: #999;
+    border-bottom: 0;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.calendar-grid {
+  margin-bottom: 40px;
+
+  &-day {
+    flex: 0 0 (100% / 7);
+    max-width: (100% / 7);
+    text-align: center;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  &-flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  &-col {
+    flex: 0 0 (100% / 7);
+    max-width: (100% / 7);
+  }
+}
+.calendar-day {
+  position: relative;
+  text-align: center;
+  border: 1px solid $border;
+  background: #FFF;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  padding-bottom: 100%;
+
+  &.gray {
+    background: none;
+  }
+  &-date {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: 700;
+    color: #000;
+  }
+  &-event {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    padding: 30px 12px 0px;
+    overflow: hidden;
+
+    &.home-game {
+      z-index: 1;
+      box-shadow: inset 0px 0px 0px 5px #0192E8;
+    }
+    &.away-game {
+      z-index: 1;
+      box-shadow: inset 0px 0px 0px 5px #737373;
+    }
+    
+
+    &-logo {
+      height: 42px;
+      margin-bottom: 5px;
+
+      img {
+        max-height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &-team {
+      @include fz(20);
+      font-weight: 500;
+      border-bottom: 0;
+      display: block;
+      margin-bottom: 8px;
+      line-height: 1.1;
+    }
+    &-points {
+      @include fz(20);
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    &-ending {
+      font-weight: 400;
+    }
+  }
+}
+
+.calendar-current {
+  margin-bottom: 20px;
+}
+.current-game {
+  background: #FFF;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  min-height: calc(100% - 20px);
+
+  &-date {
+    flex: 0 0 130px;
+    max-width: 130px;
+    background: #f4f4f4;
+    padding: 25px 10px 20px;
+    line-height: 1;
+    font-weight: 700;
+    @include fz(50);
+
+    &-month {
+      @include fz(20);
+      font-weight: 400;
+      padding-top: 10px;
+    }
+  }
+  &-body {
+    width: 100%;
+    padding: 25px 5px;
+  }
+  &-team {
+    flex: 0 0 36%;
+    max-width: 36%;
+    border: 0;
+    @include fz(20);
+    font-weight: 500;
+    padding: 0px 10px;
+    line-height: 1.1;
+
+    &-logo {
+      height: 42px;
+      margin-bottom: 8px;
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 42px;
+      }
+    }
+  }
+  &-info {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  &-points {
+    @include fz(50);
+    white-space: nowrap;
+    font-weight: 700;
+    color: #000;
+  }
+  &-ending {
+    @include fz(20);
+    margin-top: -10px;
+    font-weight: 400;
+  }
+}
+
+.calendar-future {
+  margin-bottom: 40px;
+}
+.future-game {
+  position: relative;
+  background: #FFF;
+  padding: 10px;
+  margin-bottom: 20px;
+  @include fz(16);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 44px;
+    height: 22px;
+    margin-left: -22px;
+    background: #f4f4f4;
+    border-radius: 0px 0px 25px 25px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 44px;
+    height: 22px;
+    margin-left: -22px;
+    background: #f4f4f4;
+    border-radius: 25px 25px 0 0;
+  }
+
+  &-game,
+  &-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  &-game {
+    text-align: center;
+  }
+  &-right {
+    padding: 20px 50px;
+    border-left: 1px dashed #F4F4F4;
+  }
+  &-place,
+  &-start {
+    @include fz(18);
+  }
+  &-start {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &-ticket {
+    display: inline-block;
+    position: relative;
+    margin-left: 24px;
+    color: $red;
+    border-bottom: 1px dashed $red;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      margin-top: -9px;
+      background: url(../images/calendar/ticket-red.svg) center no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      color: darken($red,8%);
+      border-color: transparent;
+    }
+  }
+  .current-game-team {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+  .current-game-info {
+    flex: 0 0 30px;
+    max-width: 30px;
+  }
+}
+
+.calendar-all {
+  margin-bottom: 10px;
+
+  [class*="flx-"] {
+    margin-bottom: 20px;
+  }
+}
+.calendar-all-menu {
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: 1px solid $border;
+
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 0px 35px -1px;
+    border-bottom-color: transparent;
+
+    &:hover,
+    &.active {
+      color: $red;
+      border-bottom-color: $red;
+    }
+  }
+}
+.mini-game {
+  position: relative;
+  background: #FFF;
+  padding: 10px;
+  margin-bottom: 10px;
+  @include fz(16);
+  text-align: center;
+  font-weight: 400;
+
+  &.home-game {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: $home;
+    }
+  }
+  &.away-game {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: $away;
+    }
+  }
+
+  &-date {
+    flex: 0 0 110px;
+    max-width: 110px;
+    padding: 5px 7px 5px 0;
+    border-right: 1px solid $border;
+    line-height: 1.3;
+
+    &-start {
+      font-weight: 300;
+      @include fz(14);
+    }
+  }
+  &-body {
+    width: 100%;
+    padding-left: 10px;
+    -ms-align-items: center;
+    align-items: center;
+    line-height: 1.05;
+  }
+  &-info {
+    flex: 0 0 48px;
+    max-width: 48px;
+    color: #000;
+  }
+  &-team {
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    border-bottom: 0;
+
+    &-logo {
+      width: 25px;
+      margin-right: 10px;
+
+      img {
+        max-height: 25px;
+      }
+    }
+  }
+  &-points {
+    font-weight: 700;
+    @include fz(25);
+  }
+  &-ending {
+    @include fz(14);
+  }
+  &-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00205B;
+    color: #FFF;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 8px 170px 8px 20px;
+    @include fz(14);
+    font-weight: 300;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 140px;
+      top: 0;
+      width: 20px;
+      height: 10px;
+      background: #f4f4f4;
+      border-radius: 0 0 20px 20px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: 140px;
+      bottom: 0;
+      width: 20px;
+      height: 10px;
+      background: #f4f4f4;
+      border-radius: 20px 20px 0 0;
+    }
+    &-place {
+      width: 100%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 150px;
+        top: 10px;
+        bottom: 10px;
+        border-right: 1px dashed rgba(#fff,.1);
+      }
+    }
+
+    &-ticket {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      a {
+        display: inline-block;
+        position: relative;
+        border-bottom: 1px dashed #FFF;
+        margin-left: 20px;
+        color: #FFF;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          margin-top: -7px;
+          width: 14px;
+          height: 14px;
+          background: url(../images/calendar/ticket-white.svg) center no-repeat;
+          background-size: contain;
+        }
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+  &:hover,
+  &:focus {
+    .mini-game-hover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
