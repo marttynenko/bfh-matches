@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded',function(){
   $('.slick-game-events').slick({
     slidesToShow: 3,
     infinite: false,
-    initialSlide: eventSlides > 3 ? eventSlides - 2 : 0,
+    initialSlide: eventSlides >= 3 ? eventSlides - 2 : 0,
     responsive: [
       {
         breakpoint: 860,

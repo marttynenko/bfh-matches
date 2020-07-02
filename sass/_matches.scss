@@ -523,6 +523,9 @@
   }
   &-points {
     @include fz(20);
+    flex: 0 0 100px;
+    max-width: 100px;
+    text-align: right;
   }
   &-points-label {
     text-align: center;
@@ -1457,6 +1460,9 @@ ul.slick-dots {
     text-align: center;
   }
 }
+.fotorama__arr {
+  z-index: 11;
+}
 
 
 
@@ -1873,6 +1879,24 @@ ul.slick-dots {
   }
   .overview-block {
     @include fz(14);
+  }
+  .game-player {
+    &-body {
+      display: block;
+    }
+    &-points {
+      text-align: left;
+      max-width: 100%;
+    }
+    &-points-label {
+      text-align: left;
+
+      div {
+        display: inline;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+    }
   }
 }//380
 

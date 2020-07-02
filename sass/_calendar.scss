@@ -501,20 +501,43 @@ $away: #737373;
   &-team {
     flex: 0 0 calc(50% - 24px);
     max-width: calc(50% - 24px);
-    display: -ms-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    -ms-justify-content: center;
-    justify-content: center;
     border-bottom: 0;
 
     &-logo {
-      width: 25px;
-      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
 
       img {
-        max-height: 25px;
+        max-height: 24px;
+      }
+    }
+    &-name {
+      display: block;
+      border: 0;
+      width: auto;
+      height: auto;
+      @include fz(16);
+      line-height: 1.05;
+      background: none !important;
+      border-radius: 0;
+      color: $font !important;
+
+      & > span {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 25px;
+          background: linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,1));
+        }
       }
     }
   }
@@ -543,6 +566,7 @@ $away: #737373;
     text-align: left;
     visibility: hidden;
     opacity: 0;
+    z-index: 9;
 
     &:before {
       content: "";
@@ -613,5 +637,22 @@ $away: #737373;
       visibility: visible;
       opacity: 1;
     }
+  }
+  .tooltip {
+    .tooltip-answer {
+      margin-left: 0;
+      width: max-content;
+      max-width: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 8px;
+    }
+  }
+}
+.jq-selectbox.disabled {
+  .jq-selectbox__select {
+    background: #EEE !important;
+    border-color: #dfdfdf !important;
+    color: rgba($font,.65);
   }
 }

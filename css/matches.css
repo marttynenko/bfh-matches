@@ -68,9 +68,9 @@
 
 .game-tabs a:hover, .game-tabs a.selected { background: #de1b1b; color: #FFF; }
 
-.clubs-news-logo { display: inline-block; vertical-align: middle; }
+.clubs-news-logo { display: inline-block; vertical-align: middle; max-width: 20px; }
 
-.clubs-news-logo img { position: relative; top: -1px; opacity: 1; visibility: visible; }
+.clubs-news-logo img { position: relative; top: -1px; opacity: 1; visibility: visible; max-height: 20px; }
 
 .clubs-news .side-news-items { overflow-y: auto; max-height: 695px; }
 
@@ -176,7 +176,7 @@
 
 .game-player-name { display: inline-block; padding-right: 20px; border: 0; }
 
-.game-player-points { font-size: 20px; font-size: 1.25rem; }
+.game-player-points { font-size: 20px; font-size: 1.25rem; flex: 0 0 100px; max-width: 100px; text-align: right; }
 
 .game-player-points-label { text-align: center; font-size: 35px; font-size: 2.1875rem; line-height: 1.1; }
 
@@ -337,11 +337,11 @@ i.svg-okey { display: inline-block; vertical-align: baseline !important; margin-
 
 i.svg-kubok { display: inline-block; vertical-align: baseline !important; margin-right: 12px !important; width: 25px !important; height: 25px !important; background: url(../images/matches/svg-kubok.svg) center no-repeat; background-size: contain; }
 
-.poll-winner { text-align: left; }
+.poll-winner { text-align: left; -ms-align-items: flex-start; align-items: flex-start; }
 
 .poll-winner-img { flex: 0 0 130px; max-width: 130px; position: relative; margin-bottom: 24px; }
 
-.poll-winner-img img { border-radius: 50%; display: block; }
+.poll-winner-img img { width: 100%; border-radius: 50%; display: block; }
 
 .poll-winner-number { position: absolute; left: 50%; top: 100%; margin-left: -24px; margin-top: -24px; width: 48px; height: 48px; line-height: 46px; background: #00A0FF; border-radius: 50%; border: 1px solid #000; color: #FFF; text-align: center; font-weight: 500; }
 
@@ -473,7 +473,7 @@ table.dark-table tbody tr:nth-of-type(odd) { background: #FFF; }
 
 .label-player-photo { position: relative; flex: 0 0 85px; max-width: 85px; padding-right: 20px; }
 
-.label-player-photo img { display: block; border-style: 33px; }
+.label-player-photo img { display: block; border-radius: 33px; }
 
 .label-player-number { position: absolute; right: 20px; bottom: 0; width: 26px; height: 26px; line-height: 26px; text-align: center; background: #00A0FF; color: #FFF; border-radius: 50%; }
 
@@ -502,6 +502,8 @@ ul.slick-dots li { padding-left: 0; margin: 3px; }
 ul.slick-dots li:before { content: none; }
 
 .slick-game-events ul.slick-dots { position: static; padding-top: 10px; text-align: center; }
+
+.fotorama__arr { z-index: 11; }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) { .game-header { padding: 30px 20px 45px; }
@@ -590,7 +592,11 @@ ul.slick-dots li:before { content: none; }
   .game-text-event-time { flex: 0 0 60px; max-width: 60px; }
   .game-text-event-icon { flex: 0 0 50px; max-width: 50px; }
   .game-anonce { font-size: 14px; font-size: 0.875rem; }
-  .overview-block { font-size: 14px; font-size: 0.875rem; } }
+  .overview-block { font-size: 14px; font-size: 0.875rem; }
+  .game-player-body { display: block; }
+  .game-player-points { text-align: left; max-width: 100%; }
+  .game-player-points-label { text-align: left; }
+  .game-player-points-label div { display: inline; font-size: 12px; margin-left: 3px; } }
 
 .game-snippet { margin: 15px 0px 30px; border: 1px solid #e9e9e9; font-size: 14px; font-size: 0.875rem; line-height: 1.42; font-weight: 400; }
 

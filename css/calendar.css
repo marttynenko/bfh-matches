@@ -154,17 +154,23 @@
 
 .mini-game-info { flex: 0 0 48px; max-width: 48px; color: #000; }
 
-.mini-game-team { flex: 0 0 calc(50% - 24px); max-width: calc(50% - 24px); display: -ms-flex; display: flex; -ms-align-items: center; align-items: center; -ms-justify-content: center; justify-content: center; border-bottom: 0; }
+.mini-game-team { flex: 0 0 calc(50% - 24px); max-width: calc(50% - 24px); border-bottom: 0; }
 
-.mini-game-team-logo { width: 25px; margin-right: 10px; }
+.mini-game-team-logo { width: 24px; height: 24px; margin: 0 auto; }
 
-.mini-game-team-logo img { max-height: 25px; }
+.mini-game-team-logo img { max-height: 24px; }
+
+.mini-game-team-name { display: block; border: 0; width: auto; height: auto; font-size: 16px; font-size: 1rem; line-height: 1.05; background: none !important; border-radius: 0; color: #3f3f3f !important; }
+
+.mini-game-team-name > span { display: block; white-space: nowrap; overflow: hidden; position: relative; }
+
+.mini-game-team-name > span:after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 25px; background: linear-gradient(90deg, rgba(255, 255, 255, 0), white); }
 
 .mini-game-points { font-weight: 700; font-size: 25px; font-size: 1.5625rem; }
 
 .mini-game-ending { font-size: 14px; font-size: 0.875rem; }
 
-.mini-game-hover { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #00205B; color: #FFF; display: -ms-flex; display: flex; -ms-align-items: center; align-items: center; padding: 8px 170px 8px 20px; font-size: 14px; font-size: 0.875rem; font-weight: 300; text-align: left; visibility: hidden; opacity: 0; }
+.mini-game-hover { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #00205B; color: #FFF; display: -ms-flex; display: flex; -ms-align-items: center; align-items: center; padding: 8px 170px 8px 20px; font-size: 14px; font-size: 0.875rem; font-weight: 300; text-align: left; visibility: hidden; opacity: 0; z-index: 9; }
 
 .mini-game-hover:before { content: ""; position: absolute; right: 140px; top: 0; width: 20px; height: 10px; background: #f4f4f4; border-radius: 0 0 20px 20px; }
 
@@ -183,5 +189,9 @@
 .mini-game-hover-ticket a:hover { border-bottom-color: transparent; }
 
 .mini-game:hover .mini-game-hover, .mini-game:focus .mini-game-hover { visibility: visible; opacity: 1; }
+
+.mini-game .tooltip .tooltip-answer { margin-left: 0; width: max-content; max-width: 300px; left: 50%; transform: translateX(-50%); margin-bottom: 8px; }
+
+.jq-selectbox.disabled .jq-selectbox__select { background: #EEE !important; border-color: #dfdfdf !important; color: rgba(63, 63, 63, 0.65); }
 
 /*# sourceMappingURL=sourcemaps/calendar.css.map */
