@@ -7,8 +7,10 @@ $away: #737373;
   border-bottom: 1px solid $border;
 }
 .flx-calendar-filter {
-  flex: 0 0 20%;
-  max-width: 20%;
+  @media (min-width: 992px) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 
   .jq-selectbox__select {
     background: #FFF !important;
@@ -179,6 +181,14 @@ $away: #737373;
 
 .calendar-grid {
   margin-bottom: 40px;
+  overflow-x: auto;
+  padding-right: 1px;
+  padding-bottom: 1px;
+
+  &-days,
+  &-flex {
+    min-width: 768px;
+  }
 
   &-day {
     flex: 0 0 (100% / 7);
@@ -656,3 +666,405 @@ $away: #737373;
     color: rgba($font,.65);
   }
 }
+
+
+/* --- RESPONSIVE ---*/
+@media (max-width: 1300px) {
+
+  .calendar-day {
+    &-event-logo {
+      height: 38px;
+
+      img {
+        max-height: 38px;
+      }
+    }
+    &-event-team {
+      white-space: nowrap;
+      overflow: hidden;
+      @include fz(18);
+      margin-bottom: 5px;
+    }
+  }
+  .current-game {
+    &-date {
+      flex: 0 0 110px;
+      max-width: 110px;
+      @include fz(42);
+    }
+    &-points {
+      @include fz(42);
+    }
+    &-team {
+      @include fz(18);
+    }
+  }
+}/*1300px end*/
+
+
+@media (max-width: 1240px) and (min-width: 992px) {
+
+  .mini-game {
+    flex-wrap: wrap;
+
+    &-date {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+      background: #F4f4f4;
+      border-right: 0;
+
+      div {
+        display: inline;
+      }
+    }
+  }
+
+}/*1240-992px*/
+
+
+@media (max-width: 1140px) {
+
+  .calendar-day {
+    padding-bottom: 0;
+    min-height: 160px;
+
+    &-date {
+      left: 7px;
+      top: 5px;
+    }
+    &-event {
+      padding: 22px 8px 0px;
+      line-height: 1.2;
+
+      &.home-game {
+        box-shadow: inset 0px 0px 0px 4px $home;
+      }
+      &.away-game {
+        box-shadow: inset 0px 0px 0px 4px $away;
+      }
+      &-team {
+        white-space: normal;
+        max-height: 38px;
+      }
+    }
+  }
+  .calendar-grid {
+    @include fz(13);
+  }
+}/* 1140px end */
+
+
+@media (max-width: 992px) {
+
+  .flx-calendar-filter {
+    .field {
+      padding-bottom: 14px;
+    }
+  }
+  .calendar-settings {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .calendar-menu-times,
+  .calendar-menu-places {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+
+    a {
+      flex: 1 0 auto;
+      text-align: center;
+      padding: 0px 9px;
+    }
+  }
+  .future-game {
+    flex-wrap: wrap;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+    &-game,
+    &-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    &-right {
+      position: relative;
+      padding: 25px 0px 10px 0px;
+      margin-top: 25px;
+      border-left: 0;
+      border-top: 1px dashed  #f4f4f4;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 30px;
+        background: #f4f4f4;
+        top: -15px;
+      }
+      &:before {
+        border-radius: 0px 15px 15px 0;
+        left: -10px;
+      }
+      &:after {
+        border-radius: 15px 0px 0px 15px;
+        right: -10px;
+      }
+    }
+    .current-game {
+      &-date {
+        padding: 10px 5px;
+
+        &-month {
+          padding-top: 5px;
+        }
+      }
+      &-body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .calendar-all-menu a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+}/*992px end*/
+
+@media (max-width: 992px) and (min-width: 400px) {
+
+  .calendar-settings {
+    padding-right: 50px;
+  }
+  .calendar-views {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+
+    a {
+      display: block;
+      height: 30px;
+      line-height: 28px;
+      padding: 7px 8px;
+    }
+  }
+}/* 992px-400px end */
+
+
+@media (max-width: 768px) {
+
+  .calendar-all-menu a {
+    margin-left: 10px;
+    margin-right: 10px;
+    @include fz(13);
+  }
+
+}/*768px end*/
+
+
+@media (max-width: 576px) {
+
+  .current-game {
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 15px;
+    min-height: none;
+
+    &-date {
+      flex: 0 0 80px;
+      max-width: 80px;
+      @include fz(32);
+      padding: 20px 5px;
+
+      &-month {
+        padding-top: 5px;
+        @include fz(14);
+      }
+    }
+    &-body {
+      padding: 20px 5px;
+    }
+    &-info {
+      flex: 0 0 90px;
+      max-width: 90px;
+    }
+    &-points {
+      @include fz(32);
+    }
+    &-ending {
+      @include fz(18);
+      margin-top: -7px;
+    }
+    &-team {
+      @include fz(15);
+      flex: 0 0 calc(50% - 45px);
+      max-width: calc(50% - 45px);
+    }
+  }
+  .future-game {
+    &-place,
+    &-start {
+      @include fz(16);
+    }
+  }
+  .calendar-all-menu {
+    margin-bottom: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+    border-bottom: 0;
+
+    a {
+      margin: 0 20px 0 0;
+      padding-bottom: 5px;
+    }
+  }
+  .calendar-all-menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+}/*576px end*/
+
+
+@media (max-width: 480px) {
+
+  .calendar-settings {
+    margin-bottom: 20px;
+  }
+  .calendar-nav {
+    line-height: 1;
+    white-space: nowrap;
+    margin-bottom: 30px;
+
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &-current {
+      margin: 0px 15px;
+      @include fz(20);
+      max-width: 120px;
+      white-space: normal;
+    }
+  }
+  .current-game {
+    flex-wrap: wrap;
+    padding: 5px;
+
+    &-date {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 5px 10px;
+      @include fz(20);
+      color: #000;
+
+      &-month {
+        padding-top: 0;
+        margin-left: 5px;
+        display: inline-block;
+      }
+    }
+    &-body {
+      padding: 15px 5px;
+    }
+  }
+  .future-game {
+    padding: 5px;
+
+    &-game {
+      flex-wrap: wrap;
+    }
+    &-right {
+      margin-top: 20px;
+      padding: 20px 5px 10px;
+    }
+    .current-game {
+      &-date {
+        padding: 5px 1px;
+      }
+      &-body {
+        padding-top: 15px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .mini-game {
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 10px;
+
+    &-date {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+      background: #F4f4f4;
+      border-right: 0;
+
+      div {
+        display: inline;
+      }
+    }
+    &-body {
+      padding-bottom: 5px;
+      padding-left: 0;
+    }
+  }
+
+}/*480px end*/
+
+
+@media (max-width: 400px) {
+
+  .calendar-filter {
+    margin-bottom: 25px;
+  }
+  .calendar-menu-times,
+  .calendar-menu-places {
+    
+    a {
+      height: 34px;
+      line-height: 32px;
+    }
+  }
+  .calendar-views {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+
+    a {
+      flex: 1 0 auto;
+      height: 34px;
+      line-height: 32px;
+      text-align: center;
+      padding: 5px;
+
+      svg {
+        display: inline-block;
+      }
+    }
+  }
+  .flx-calendar-filter {
+    .field {
+      padding-bottom: 7px;
+    }
+    .jq-selectbox__select {
+      height: 34px;
+      line-height: 32px;
+    }
+    .jq-selectbox__dropdown {
+      top: 34px;
+    }
+    .jq-selectbox__dropdown[style*="top: auto;"] {
+      bottom: 34px;
+    }
+  } 
+
+    
+  
+}/*400px end*/
