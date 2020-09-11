@@ -110,7 +110,7 @@ $away: #737373;
       color: #00205B;
       background: rgba(#00205b,0.1);
       border-color: rgba(#00205b,0.1);
-      z-index: 1;
+      z-index: 19;
     }
     &.active {
       color: #FFF;
@@ -120,6 +120,68 @@ $away: #737373;
       svg {
         fill: #FFF;
       }
+    }
+    &.inactive {
+      background: #eee;
+      color: #666;
+      border-color: #dfdfdf !important;
+      cursor: not-allowed;
+
+      svg {
+        fill: #666;
+      }
+    }
+    &:hover {
+      .calendar-views-hint {
+        visibility: visible;
+        opacity: 1;
+        transform: translate3d(-50%,0,0);
+      }
+    }
+  }
+  &-hint {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 299;
+    background: #FFF;
+    width: 150px;
+    bottom: 100%;
+    margin-bottom: 8px;
+    left: 50%;
+    transform: translate3d(-50%,15px,0);
+    font-size: 12px;
+    padding: 10px 15px;
+    border: 1px solid #e9e9e9;
+    color: #3f3f3f;
+    font-size: 12px;
+    transition: visibility .15s, opacity .15s, transform .15s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 6px 0 6px;
+      border-color: #e9e9e9 transparent transparent transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: #FFF transparent transparent transparent;
     }
   }
 }
@@ -524,13 +586,13 @@ $away: #737373;
     line-height: 1.05;
   }
   &-info {
-    flex: 0 0 48px;
-    max-width: 48px;
+    flex: 0 0 64px;
+    max-width: 64px;
     color: #000;
   }
   &-team {
-    flex: 0 0 calc(50% - 24px);
-    max-width: calc(50% - 24px);
+    flex: 0 0 calc(50% - 32px);
+    max-width: calc(50% - 32px);
     border-bottom: 0;
 
     &-logo {
