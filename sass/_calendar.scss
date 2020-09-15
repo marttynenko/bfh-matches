@@ -1,6 +1,9 @@
 $home: #0192E8;
 $away: #737373;
 
+.game-calendar-wrapper {
+  position: relative;
+}
 .calendar-filter {
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -758,7 +761,9 @@ $away: #737373;
   }
 }
 
-
+.ui-relative {
+  position: relative;
+}
 .ui-preloader {
   display: -ms-flexbox;
   display: flex;
@@ -771,6 +776,18 @@ $away: #737373;
   background: #f2f2f2;
   padding: 20px 15px 30px;
   text-align: center;
+
+  &-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    z-index: 999;
+    -ms-justify-content: start;
+    justify-content: start;
+    padding-top: 30px;
+  }
 
   &-hint {
     font-weight: 600;

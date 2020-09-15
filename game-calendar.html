@@ -353,340 +353,344 @@
 
 			<h1 class="page-title">Календарь игр</h1>
 
-			<div class="calendar-filter">
-				<div class="flex-row">
-					<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
-						<div class="field">
-							<label for="" class="label-block">Сезон:</label>
-							<select name="" id="">
-								<option value="1">2020/2021</option>
-								<option value="2">2019/2020</option>
-								<option value="3">2018/2019</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
-						<div class="field">
-							<label for="" class="label-block">Соревнование:</label>
-							<select name="" id="">
-								<option value="1">Экстралига - 2020/2021</option>
-								<option value="2">Высшая лига - 2020/2021</option>
-								<option value="3">Экстарлига - 2018/2019</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
-						<div class="field">
-							<label for="" class="label-block">Дивизион:</label>
-							<select name="" id="">
-								<option value="1">Дивизион 1</option>
-								<option value="2">Дивизион 2</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
-						<div class="field">
-							<label for="" class="label-block">Команды:</label>
-							<select name="" id="">
-								<option value="1">Гомель</option>
-								<option value="2">Динамо-Минск</option>
-								<option value="3">Лида</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
-						<div class="field">
-							<label for="" class="label-block">Месяц:</label>
-							<select name="" id="">
-								<option value="1">Сентябрь</option>
-								<option value="2">Октбрь</option>
-								<option value="3">Ноябрь</option>
-								<option value="4">Декабрь</option>
-								<option value="5">Январь</option>
-								<option value="6">Февраль</option>
-								<option value="7">Март</option>
-							</select>
-						</div>
-					</div>
-
-				</div>
-			</div><!--.calendar-filter-->
-
-			<div class="calendar-settings flex">
-				<div class="calendar-menu calendar-menu-times">
-					<a href="#" class="active">Все</a>
-					<a href="#">Прошедшие</a>
-					<a href="#">Текущие</a>
-					<a href="#">Будущие</a>
-				</div>
-
-				<div class="calendar-menu calendar-menu-places">
-					<a href="#" class="active">Все</a>
-					<a href="#"><i class="calendar-menu-circle blue"></i>Дома</a>
-					<a href="#"><i class="calendar-menu-circle gray"></i>В гостях</a>
-				</div>
-
-				<div class="calendar-views">
-					<a href="javascript:void(0)" class="calendar-views-link" data-view="grid">
-						<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-grid"/></svg>
-					</a>
-					<a href="javascript:void(0)" class="calendar-views-link" data-view="list">
-						<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-list"/></svg>
-					</a>
-					<a href="javascript:void(0)" class="calendar-views-link active" data-view="calendar">
-						<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-calendar"/></svg>
-					</a>
-				</div>
-			</div><!--.calendar-settings-->
-
-			<div class="calendar-nav">
-				<a href="#" class="calendar-nav-prev">Август</a>
-				<span class="calendar-nav-current">Сентябрь 2020</span>
-				<a href="#" class="calendar-nav-next">Октябрь</a>
-			</div>
-
-			<div class="calendar-grid">
-				<div class="calendar-grid-days flex">
-					<div class="calendar-grid-day">Понедельник</div>
-					<div class="calendar-grid-day">Вторник</div>
-					<div class="calendar-grid-day">Среда</div>
-					<div class="calendar-grid-day">Четверг</div>
-					<div class="calendar-grid-day">Пятница</div>
-					<div class="calendar-grid-day">Суббота</div>
-					<div class="calendar-grid-day">Воскресенье</div>
-				</div>
-				<div class="calendar-grid-flex flex">
-					<div class="calendar-grid-col">
-						<div class="calendar-day gray"></div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day gray"></div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">1</div>
-							<div class="calendar-day-event home-game">
-								<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-3.png" alt="1"></a></div>
-								<a href="#" class="calendar-day-event-team">Витебск</a>
-								<div class="calendar-day-event-points"><a href="#">2:1</a></div>
-								<div class="calendar-day-event-ending">БУЛ</div>
+			<div class="game-calendar-wrapper">
+				<div class="calendar-filter">
+					<div class="flex-row">
+						<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
+							<div class="field">
+								<label for="" class="label-block">Сезон:</label>
+								<select name="" id="">
+									<option value="1">2020/2021</option>
+									<option value="2">2019/2020</option>
+									<option value="3">2018/2019</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">2</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">3</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">4</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">5</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">6</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">7</div>
-						</div>
-					</div>
-
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">8</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">9</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">10</div>
-							<div class="calendar-day-event home-game">
-								<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-2.png" alt="1"></a></div>
-								<a href="#" class="calendar-day-event-team">Гомель</a>
-								<div class="calendar-day-event-time">Начало матча в 19:00</div>
+						<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
+							<div class="field">
+								<label for="" class="label-block">Соревнование:</label>
+								<select name="" id="">
+									<option value="1">Экстралига - 2020/2021</option>
+									<option value="2">Высшая лига - 2020/2021</option>
+									<option value="3">Экстарлига - 2018/2019</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">11</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">12</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">13</div>
-							<div class="calendar-day-event away-game">
-								<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-1.png" alt="1"></a></div>
-								<a href="#" class="calendar-day-event-team">Динамо-Минск</a>
-								<div class="calendar-day-event-points"><a href="#">2:1</a></div>
-								<div class="calendar-day-event-ending">БУЛ</div>
+						<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
+							<div class="field">
+								<label for="" class="label-block">Дивизион:</label>
+								<select name="" id="">
+									<option value="1">Дивизион 1</option>
+									<option value="2">Дивизион 2</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">14</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">15</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">16</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">17</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">18</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">19</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">20</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">21</div>
-						</div>
-					</div>
-
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">22</div>
-							<div class="calendar-day-event away-game">
-								<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-4.png" alt="1"></a></div>
-								<a href="#" class="calendar-day-event-team">Металлург</a>
-								<div class="calendar-day-event-points"><a href="#">1:7</a></div>
+						<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
+							<div class="field">
+								<label for="" class="label-block">Команды:</label>
+								<select name="" id="">
+									<option value="1">Гомель</option>
+									<option value="2">Динамо-Минск</option>
+									<option value="3">Лида</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">23</div>
+						<div class="flx-calendar-filter flx-m-3 flx-x-4 flx-u-6">
+							<div class="field">
+								<label for="" class="label-block">Месяц:</label>
+								<select name="" id="">
+									<option value="1">Сентябрь</option>
+									<option value="2">Октбрь</option>
+									<option value="3">Ноябрь</option>
+									<option value="4">Декабрь</option>
+									<option value="5">Январь</option>
+									<option value="6">Февраль</option>
+									<option value="7">Март</option>
+								</select>
+							</div>
 						</div>
+
+					</div>
+				</div><!--.calendar-filter-->
+
+				<div class="calendar-settings flex">
+					<div class="calendar-menu calendar-menu-times">
+						<a href="#" class="active">Все</a>
+						<a href="#">Прошедшие</a>
+						<a href="#">Текущие</a>
+						<a href="#">Будущие</a>
 					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">24</div>
+					<div class="calendar-menu calendar-menu-places">
+						<a href="#" class="active">Все</a>
+						<a href="#"><i class="calendar-menu-circle blue"></i>Дома</a>
+						<a href="#"><i class="calendar-menu-circle gray"></i>В гостях</a>
+					</div>
+
+					<div class="calendar-views">
+						<a href="javascript:void(0)" class="calendar-views-link" data-view="grid">
+							<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-grid"/></svg>
+						</a>
+						<a href="javascript:void(0)" class="calendar-views-link" data-view="list">
+							<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-list"/></svg>
+						</a>
+						<a href="javascript:void(0)" class="calendar-views-link active" data-view="calendar">
+							<svg class="sprite svg-calendar-view"><use xlink:href="vectors/svg/symbols.svg#view-calendar"/></svg>
+						</a>
+					</div>
+				</div><!--.calendar-settings-->
+
+				<div class="calendar-nav">
+					<a href="#" class="calendar-nav-prev">Август</a>
+					<span class="calendar-nav-current">Сентябрь 2020</span>
+					<a href="#" class="calendar-nav-next">Октябрь</a>
+				</div>
+
+				<div class="calendar-grid">
+					<div class="calendar-grid-days flex">
+						<div class="calendar-grid-day">Понедельник</div>
+						<div class="calendar-grid-day">Вторник</div>
+						<div class="calendar-grid-day">Среда</div>
+						<div class="calendar-grid-day">Четверг</div>
+						<div class="calendar-grid-day">Пятница</div>
+						<div class="calendar-grid-day">Суббота</div>
+						<div class="calendar-grid-day">Воскресенье</div>
+					</div>
+					<div class="calendar-grid-flex flex">
+						<div class="calendar-grid-col">
+							<div class="calendar-day gray"></div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">25</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day gray"></div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">26</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">1</div>
+								<div class="calendar-day-event home-game">
+									<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-3.png" alt="1"></a></div>
+									<a href="#" class="calendar-day-event-team">Витебск</a>
+									<div class="calendar-day-event-points"><a href="#">2:1</a></div>
+									<div class="calendar-day-event-ending">БУЛ</div>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">27</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">2</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">28</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">3</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">29</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">4</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">30</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">5</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day">
-							<div class="calendar-day-date">31</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">6</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day gray"></div>
-					</div>
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">7</div>
+							</div>
+						</div>
 
-					<div class="calendar-grid-col">
-						<div class="calendar-day gray"></div>
-					</div>
-					
-				</div><!--.flex-->
-			</div><!--.calendar-grid-->
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">8</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">9</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">10</div>
+								<div class="calendar-day-event home-game">
+									<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-2.png" alt="1"></a></div>
+									<a href="#" class="calendar-day-event-team">Гомель</a>
+									<div class="calendar-day-event-time">Начало матча в 19:00</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">11</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">12</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">13</div>
+								<div class="calendar-day-event away-game">
+									<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-1.png" alt="1"></a></div>
+									<a href="#" class="calendar-day-event-team">Динамо-Минск</a>
+									<div class="calendar-day-event-points"><a href="#">2:1</a></div>
+									<div class="calendar-day-event-ending">БУЛ</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">14</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">15</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">16</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">17</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">18</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">19</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">20</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">21</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">22</div>
+								<div class="calendar-day-event away-game">
+									<div class="calendar-day-event-logo"><a href="#"><img src="images/matches/team-midi-4.png" alt="1"></a></div>
+									<a href="#" class="calendar-day-event-team">Металлург</a>
+									<div class="calendar-day-event-points"><a href="#">1:7</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">23</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">24</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">25</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">26</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">27</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">28</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">29</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">30</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day">
+								<div class="calendar-day-date">31</div>
+							</div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day gray"></div>
+						</div>
+
+						<div class="calendar-grid-col">
+							<div class="calendar-day gray"></div>
+						</div>
+						
+					</div><!--.flex-->
+				</div><!--.calendar-grid-->
+
+				<div class="ui-preloader ui-preloader-over"><div class="lds-ellipsis ui-preloader-spinner"><div></div><div></div><div></div><div></div></div><div class="ui-preloader-hint">Подождите, идет загрузка</div></div>
+			</div><!--.game-calendar-wrapper-->
 
 		</div><!--.main-layout-->
 

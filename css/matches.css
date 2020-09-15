@@ -188,6 +188,8 @@
 
 .best-players-group .h3, .best-players-group .h3 { margin-bottom: 30px; }
 
+.ui-relative { position: relative; }
+
 .ui-preloader { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-align-items: center; align-items: center; -ms-justify-content: center; justify-content: center; background: #f2f2f2; padding: 20px 15px 30px; text-align: center; }
 
 .ui-preloader-hint { font-weight: 600; font-size: 18px; color: #252525; margin-top: -20px; }
