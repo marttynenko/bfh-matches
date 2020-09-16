@@ -495,12 +495,19 @@ $away: #737373;
     }
   }
   .current-game-team {
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
+    flex: 0 0 calc(50% - 65px);
+    max-width: calc(50% - 65px);
+  }
+  .current-game-points {
+    line-height: 1.05;
+    white-space: nowrap;
   }
   .current-game-info {
-    flex: 0 0 30px;
-    max-width: 30px;
+    flex: 0 0 130px;
+    max-width: 130px;
+  }
+  .game-ending {
+    @include fz(18);
   }
 }
 
@@ -1104,6 +1111,18 @@ $away: #737373;
     &-place,
     &-start {
       @include fz(16);
+    }
+    .current-game-info {
+      flex: 0 0 90px;
+      max-width: 90px;
+    }
+    .current-game-team {
+      flex: 0 0 calc(50% - 45px);
+      max-width: calc(50% - 45px);
+    }
+    .game-ending {
+      @include fz(16);
+      font-weight: 400;
     }
   }
   .calendar-all-menu {

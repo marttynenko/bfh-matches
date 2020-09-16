@@ -148,9 +148,13 @@
 
 .future-game-ticket:hover { color: #ba1717; border-color: transparent; }
 
-.future-game .current-game-team { flex: 0 0 calc(50% - 15px); max-width: calc(50% - 15px); }
+.future-game .current-game-team { flex: 0 0 calc(50% - 65px); max-width: calc(50% - 65px); }
 
-.future-game .current-game-info { flex: 0 0 30px; max-width: 30px; }
+.future-game .current-game-points { line-height: 1.05; white-space: nowrap; }
+
+.future-game .current-game-info { flex: 0 0 130px; max-width: 130px; }
+
+.future-game .game-ending { font-size: 18px; font-size: 1.125rem; }
 
 .calendar-all { margin-bottom: 10px; }
 
@@ -312,6 +316,9 @@
   .current-game-ending { font-size: 18px; font-size: 1.125rem; margin-top: -7px; }
   .current-game-team { font-size: 15px; font-size: 0.9375rem; flex: 0 0 calc(50% - 45px); max-width: calc(50% - 45px); }
   .future-game-place, .future-game-start { font-size: 16px; font-size: 1rem; }
+  .future-game .current-game-info { flex: 0 0 90px; max-width: 90px; }
+  .future-game .current-game-team { flex: 0 0 calc(50% - 45px); max-width: calc(50% - 45px); }
+  .future-game .game-ending { font-size: 16px; font-size: 1rem; font-weight: 400; }
   .calendar-all-menu { margin-bottom: 30px; overflow-x: auto; white-space: nowrap; text-align: left; border-bottom: 0; }
   .calendar-all-menu a { margin: 0 20px 0 0; padding-bottom: 5px; }
   .calendar-all-menu::-webkit-scrollbar { width: 0; height: 0; } }
